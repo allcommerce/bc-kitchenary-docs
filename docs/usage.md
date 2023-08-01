@@ -28,7 +28,7 @@ Then click the Install buttons in turn to install all available widgets:
 
 ![install-papathemes-widgets](img/install-papathemes-widgets.jpg)
 
-Go to **Storefront** > **My Themes** > click **Customize** in dropdown menu of Mooncat theme to open Page Builder. Select any theme style to start:
+Go to **Storefront** > **My Themes** > click **Customize** in dropdown menu of Kitchenary theme to open Page Builder. Select any theme style to start:
 
 ![click-theme-customize](img/click-theme-customize.jpg)
 
@@ -37,7 +37,7 @@ Verify the widgets installed successfully if they appear in Page Builder:
 ![custom-widgets-appear](img/custom-widgets-appear.jpg)
 
 
-## Setting Up Pets Style Home Page
+## Setting Up Kitchenary Style Home Page
 
 To start customizing the theme, login to your admin panel, go to **Storefront** > **My Themes**, click **Customize** button next to theme thumbnail.
 
@@ -55,6 +55,15 @@ To configure the header, click on **Theme Styles** > **Header** section, here yo
 **Watch the instruction video:**
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796872043?h=5d2873e4a6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-header"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+#### Webpage Outliner
+
+![Outliner](img/website-outline.jpg)
+
+To config outliner of webpage, click on **Theme Styles** > **Header** > **Top Bar** change color of **Background** to color of your design (exmaple: #F3AD66). Beside the background the theme also allow users to change **Text**, **Text Hover** and **Icon** color on the Top Bar.
+
+
+![Top-bar](img/top-bar-background.jpg)
 
 #### Quick search
 
@@ -131,24 +140,6 @@ Before
 
 Affer:
 ![hidden-web-links](img/hidden-web-links.jpg)
-
-#### Products by category in mega menu
-
-![products-by-category-mega-menu](img/products-by-category-in-mega-menu.png)
-
-To create **Products by category in mega menu**:
-
-Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
-
-Drag and drop **Section Heading | PapaThemes Beautify** widget into **Column 1**. Typing your text (example "Feature Box Items"), set **Padding** = `10 0 10 0`, **Padding (Mobile)** = `10 0 10 0`.
-
-Drag and drop **Products Feed | PapaThemes Beautify** widget into **Column 1** below **Section Heading** widget. In **Products** enter URL of the category to fetch products (example `/bird/`). Checked **Render with template** and enter your template file: `beautify/products-feed/list`.
-
-Change **Limit** = `3`.
-
-**Watch the instruction video:**
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796864334?h=12fed2f800&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="products-feed-guide-full"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Top Banner
 
@@ -263,30 +254,9 @@ Noted: Total the height of two banner minus `24px` should equal height of main c
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796915564?h=fc5cc022ba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Instr-right banner"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-### Top categories
+### Shop for Kitchen icon
 
-Desktop
-![Top categories](img/top-categories.jpg)
 
-Mobile
-
-![Top categories](img/top-categories-mobile.jpg)
-
-To create Top categories, in Page Builder drag and drop the **Layout widget** to the position **home below carousel**. Select the layout change column to 1 and change **layout name** = `TOP CATEGORIES`.
-
-Drag and drop **Flex Banners | PapaThemes Beautify** to the layout delete all the items except the first one then change to your image change **width** = `237` and **height** = `100`. If you want to show different image on mobile please enable **show different image on mobile** change to your image on mobile and set **width** = `82`, **height** = `120`. Open content tab disable heading and enable description change **content align** = `center`, Content padding **Top** = `12px` **Left** = `60px`. In general tab change padding **Top, right, bottom, left** = `8px`. 
-
-On **Flex Banners | PapaThemes Beautify** choose setting. In general tab enable **display content overlaying banner on mobile**. In carousel tab, enable carousel and click on **setting**. In carousel setting , setup following **Items per slide** = `6`, table and mobile = `4`. Enable `show dot`.
-
-At **Description text** > **setting** change **Description style** = `Custom` set **Font size** = `18px`, **Font site (Mobile)** = `14px` and **Text color** = `#0F0F2D`.
-
-To change the background color, edit the layout, set Layout Background to a certain color that you want.
-
-To setup heading, drag and drop **section heading | PapaThemes Beautify** and type your heading. Change padding **bottom** = `20px`, **alignment** = `center`
-
-**Watch the instruction video:**
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796510179?h=f3fd45871a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-top category"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
 ### Product by category
@@ -487,12 +457,53 @@ In **Settings** of **Flex Banners | PapaThemes Beautify** > **General**, uncheck
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795508011?h=5c2f4c22f2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-banner"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+### Shopping Guide
+
+![Shopping-guide](img/Shopping-guide.jpg)
+
+**Shopping guide** is section that loading content from **blogs page**. **Shopping guide** and **Blog** have the same content and function we advise you should only use one them.
+
+To enable **Shopping guide**, in **Theme Styles** > **Homepage** > **Section** choose one of sections and type `shopping_guide` to enable this block.
+
+To change color background of this section click on **Background** and select color fit to design.
+
+![Enable-shopping-guide](img/Enable-shopping-guide.jpg)
+
+To change tilte of this section, in **Hompage** find **Shopping guide & Newest Update** type your text in **Heading**.
+
+**Shopping guide** is an upgrade version of blogs section by add quick view modal which help user quickly access information without open new pages. **Shopping guide** quick view will automatic load all **widget** that have been designed from blog page.
+
+![Shopping-guide-modal](img/Shopping-guide-modal.jpg)
+
+### Featured brands
+
+![Featured-brand](img/featured-brand.jpg)
+
+**Featured brand** will automatic load all brands of your store.
+
+To enable **Featured brand**, in **Theme Styles** > **Homepage** > **Section** choose one of sections and type `featured_brands` to enable this block.
+
+To change color background of this section click on **Background** and select color fit to design.
+
+This section allow user change section tiltle and display/hide brands logo, in **Hompage** find **Featured brand** type your text in **Heading** and checked the **Show brand logo** to display brands logo.
+
+### Top Categories
+
+![Top-categories](img/Top-categories.jpg)
+
+**Top Categories** will automatic load first level categories of your store.
+
+To enable **Top Categories**, in **Theme Styles** > **Homepage** > **Section** choose one of sections and type `top_categories` to enable this block.
+
+To change color background of this section click on **Background** and select color fit to design.
+
+This section allow user change section tiltle, in **Hompage** find **Top Categories** type your text in **Heading**.
 
 ### Special products tabs
 
 ![special-products-tabs](img/special-products-tabs.jpg)
 
-You can configure special products tabs section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **Special Products Tabs** selected.
+You can configure special products tabs section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field type `spt`.
 
 In **New / Featured / Bestselling Tabs** section, Change **Number of products** = `5` and **Number of products load more on viewport** = `0`. You can change **Default tab** to `Featured`, `Bestselling` or `New`. **Display type** can be changed to `Carousel` or `Grid`. **Show more button**, **featured products**, **bestselling products**, **new products**, **categories** can be enabled by checked box.
 
@@ -502,34 +513,53 @@ In **New / Featured / Bestselling Tabs** section, Change **Number of products** 
 
 ### Featured products
 
-![featured-products](img/feature-product.jpg)
+![featured-products](img/Feature-products.jpg)
 
 You can set featured products in **Products**, click the **star** icon on the same row to set the product as featured.
 
-Go back to **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **Featured Products** selected. In **Featured products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
+Go back to **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `featured_products`. In **Featured products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
 ### New products
 
-![new-products](img/new-product.jpg)
+![new-products](img/New-products.jpg)
 
-You can configure new products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **New Products** selected. In **New products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
+You can configure new products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `new_products` . In **New products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
 ### Bestselling products
 
-![bestselling-products](img/best-selling-product.jpg)
+![bestselling-products](img/Popular-product.jpg)
 
 Bestselling products only display when your store has some order.
 
-You can configure bestselling products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **Popular Products** selected. In **Best-sellers products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
+You can configure bestselling products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `popular_products`. In **Best-sellers products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
 ### Recently Viewed Products
 
-![bestselling-products](img/recently-viewed-product.jpg)
+![bestselling-products](img/Recently-viewed-products.jpg)
 
 Recently Viewed Products will be display automatically viewed any product.
 
-You can configure recently viewed products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **Recently Viewed Products** selected. In **Recently Viewed Products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
+You can configure recently viewed products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `recentviewed`. In **Recently Viewed Products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
+### Customer service
+
+![customer-service](img/customer-service.jpg)
+
+To enable **Customer service**, in **Theme Styles** > **Homepage** > **Section** choose one of sections and type `top_categories` to enable this block.
+
+To change color background of this section click on Background and select color fit to design.
+
+This section allow user change section tiltle, in **Hompage** find **Customer service** type your text in Heading.
+
+- **Phone number**: will automatically collect number from store profile.
+- **Whapsapp**: To change Whatsapp number, go to **Footer** find **+Whatsapp** and type your number in the input field.
+- **Email**: To change email number, go to **Footer** find **+Email** and type your email address in the input field.
+
+![whatsapp-email](img/whatsapp-email.jpg)
+
+To change Background of button, go to **General** find **General colors** change **Secondary color** to your color.
+
+To change **Text**, **Icon** and **Hover** color go to **General** find **Links colors** change **Default** to your color.
 
 ### Instagram photos
 
@@ -609,146 +639,6 @@ In **design** you can type your link content and click on the **insert/edit link
 In the popup window, copy your web link to `URL`. On the **Open links..** field you can select how your link could be open in **New Window** or **Current Window**
  
  ![Insert-links](img/insert-links.jpg)
-
-## Setting Up Baby Style Home Page
-
-### General
-
-You can read these common instructions in **Setting Up Pets Style Home Page** chapter:
-
-- [Header](#header)
-- [Top Banner](#top-banner)
-- [Ad Banner displays on all pages](#ad-banner-displays-on-all-pages)
-- [Main carousel](#main-carousel)
-- [Top categories](#top-categories)
-- [Product by category](#product-by-category)
-- [Kitten and Puppy](#kitten-and-puppy)
-- [Top Brand](#top-brand)
-- [Double banner](#double-banner)
-- [Banner](#banner)
-- [Special products tabs](#special-products-tabs)
-- [Featured products](#featured-products)
-- [New products](#new-products)
-- [Bestselling products](#bestselling-products)
-- [Recently Viewed Products](#recently-viewed-products)
-- [Instagram photos](#instagram-photos)
-- [Recent blog posts](#recent-blog-posts)
-- [Newsletter](#newsletter)
-- [Footer](#footer)
-
-### Left-sidebar layout
-
-To display category on left sidebar, in **page builder** > **Theme styles** > **General**. Find **option layout**, select **left-sidebar**.
-
-![left-sidebar](img/left-sidebar.jpg)
-
-### Banner below sidebar
-
-![left-banner-below-left-sidebar](img/left-banner-below-left-sidebar.jpg)
-
-To create **Left Banner**, drag & drop **Layout** widget to the corresponding position, change **Column** = `1`.
-
-Select **Column 1**, set **Padding** = `0 0 0 0`. Drag & drop **Flex Banners | PapaThemes Beautify** widget into **Colum 1**. Delete all other banners except the first one.
-
-Upload your image set **Image width** = `388`, **Image height** = `725` and **Border radius** = `30px`.
-
-In **Content**, hide **Heading text** if your image has text already.
-
-In **General** > **Padding**, set `0` for all values.
-
-In **General** > **Padding**, set `100%` for all device.
-
-### Footer newsletter
-
-Go to Page Builder, in **Theme Styles** > **Footer** > **Newsletter** section, select **Style** = `In Footer`. Select **Show store logo** and **Show social icons** = `In newsletter`.
-Make sure **Show newsletter form** is selected. You can change the **Heading**, **background color**, **background image**, **button** and **text colors**.
-
-![newsletter-in-footer](img/newsletter-in-footer.jpg)
-
-## Setting Up Book Style Home Page
-
-### General
-
-You can read these common instructions in **Setting Up Pets Style Home Page** chapter:
-
-- [Header](#header)
-- [Top Banner](#top-banner)
-- [Ad Banner displays on all pages](#ad-banner-displays-on-all-pages)
-- [Main carousel](#main-carousel)
-- [Top categories](#top-categories)
-- [Product by category](#product-by-category)
-- [Kitten and Puppy](#kitten-and-puppy)
-- [Top Brand](#top-brand)
-- [Double banner](#double-banner)
-- [Banner](#banner)
-- [Special products tabs](#special-products-tabs)
-- [Featured products](#featured-products)
-- [New products](#new-products)
-- [Bestselling products](#bestselling-products)
-- [Recently Viewed Products](#recently-viewed-products)
-- [Instagram photos](#instagram-photos)
-- [Recent blog posts](#recent-blog-posts)
-- [Newsletter](#newsletter)
-- [Footer](#footer)
-
-
-## Setting Up Heath-care Style Home Page
-
-### General
-
-You can read these common instructions in **Setting Up Pets Style Home Page** chapter:
-
-- [Header](#header)
-- [Top Banner](#top-banner)
-- [Ad Banner displays on all pages](#ad-banner-displays-on-all-pages)
-- [Main carousel](#main-carousel)
-- [Top categories](#top-categories)
-- [Product by category](#product-by-category)
-- [Kitten and Puppy](#kitten-and-puppy)
-- [Top Brand](#top-brand)
-- [Double banner](#double-banner)
-- [Banner](#banner)
-- [Special products tabs](#special-products-tabs)
-- [Featured products](#featured-products)
-- [New products](#new-products)
-- [Bestselling products](#bestselling-products)
-- [Recently Viewed Products](#recently-viewed-products)
-- [Instagram photos](#instagram-photos)
-- [Recent blog posts](#recent-blog-posts)
-- [Newsletter](#newsletter)
-- [Footer](#footer)
-
-
-### Three Banners
-
-Desktop
-
-![three banners](img/three-banners.jpg)
-
-To create **Three Banners**:
-
-In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`. Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1** and duplicate **Banner 1** to 3 banners.
-
-To edit **Banner 1**, change your image, set **Image width** = `790px`, **Image height** = `435px`. Show different image on mobile and upload your image, set **Image width (Mobile)** = `388px`, **Image height (Mobile)** = `230px`, **Border radius** = `30px`.
-
-In **Content**, hide **Heading text** if your image already has text.
-
-In **General**, choose **Width** = `%`, set **Value (Desktop)** = `46%`, **Value (Tablet)** = `100%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** = `0 10 0 10`, **Table** = `0 15 0 0`, **Mobile** = `21 0 21 0`.
-
-To edit **Banner 2**, change your image, set **Image width** = `435px`, **Image height** = `435px`. If you want to show different image on mobile please enable **Show different image on mobile** upload your image in **Image (Mobile)** field. Set **Border radius** = `30px`.
-
-In **Content**, hide **Heading text** if your image already has text.
-
-In **General**, choose **Width** = `%`, set **Value (Desktop)** = `25.5%`, **Value (Tablet)** = `50%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** = `0 20 0 0`, **Table** = `0 0 32 0`, **Mobile** = `0 0 0 0`.
-
-Set values for **Banner 3** as the same **Banner 2**. In **General** of **Banner 3**, set **Padding** for **Desktop** = `0 0 0 20`, **Tablet** = `0 0 0 15`, **Mobile** = `0 0 0 0`.
-
-### Recent blog
-
-![Recent blog](img/recent-blog.jpg)
-
-In **Page Builder** > **Theme Styles** > **Home Page** > **Recent Blog** find **Number of posts**, select `2` to change display **Recent blog**.
-
 
 ## Customizing Products Display
 
