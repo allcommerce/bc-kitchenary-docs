@@ -626,6 +626,51 @@ In **Page Builder** > **Theme Styles** > **Footer**, you can configure the newsl
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795439897?h=4ef5896555&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-footer"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+### Footer Map
+
+**Create map using widget**
+
+![map-script](img/map-script.jpg)
+
+Drag and drop the **Layout widget** to the desired position. Set the **Column** = `1`.
+
+Select Column 1 and set the **Padding** = `0 0 0 0`.
+
+Drag and drop the **HTML** widget into the Layout section.
+
+Obtain the embed map code by following these instructions:
+
+Go to https://www.google.com/maps and enter the desired location. On the left side of the screen, select **Share** and then choose **Embed a map**.
+Copy the HTML code provided.
+
+![get-script-map](img/get-map-script.jpg)
+
+Paste the map code into the HTML editor. Edit the **width** and **height** = `100%`, and click the Save HTML button.
+
+![map-script-edit](img/map-script-edit.jpg)
+
+
+**To display the map using an API key:**
+
+Configure the product cards in **Page Builder** > **Theme Styles** > **Footer** > **Main Footer**.
+
+![footer-map-api](img/footer-map-api.jpg)
+
+Enable the **Show Google map** option.
+
+Fill in your **Google Maps API key**. If you don't have an API key, please send us a help request for assistance.
+
+Enter the **Latitude, Longitude, and Zoom level** for the map. Separate the values with commas and ensure they are contiguous.
+
+Example: `10.795005889833666, 106.72182056991105, 15`.
+
+To obtain the latitude and longitude values, follow these steps:
+
+Go to https://www.google.com/maps and enter the desired location.
+Right-click on the marker icon on the map and copy the longitude and latitude values.
+
+![gmap-lat-lng](img/gmap-lat-lng.jpg)
+
 ### Display custom footer links
 
 In **Page builder** > **Custom Widget** find **Footer links | PapaThemes Beautify** widget then drag and drop the widget to corresponding position in Footer.
