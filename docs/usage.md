@@ -501,7 +501,7 @@ This section allow user change section tiltle, in **Hompage** find **Top Categor
 
 ### Shop For Kitchen
 
-![shop-for-kitchen](shop-for-kitchen.jpg)
+![shop-for-kitchen](img/shop-for-kitchen.jpg)
 
 Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`.
 
@@ -516,6 +516,8 @@ Choose the `Circle` option in the **Icon** section.
 For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `12.5%`, **Tablet** = `15.5%`, **Mobile** = `23%`.
 
 In the **Padding** section, set the values for different devices as follows: **Desktop** = `0 15 30 15`, **Tablet** = `0 8 0 8`, **Mobile** = `0 8 0 8`.
+
+![shop-for-kitchen-config](img/shop-for-kitchen-config.jpg)
 
 Select your desired icon in the **Icon** section.
 
