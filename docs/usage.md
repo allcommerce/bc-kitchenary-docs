@@ -620,6 +620,8 @@ For each review, provide the following details:
 
 To maintain consistency in the theme, select `Beautify Furniture` in the **Style for theme** option.
 
+![customer-reviews-edit](img/customer-reviews-edit.png)
+
 If you want to add more reviews, duplicate the first review as many times as needed and update the content for each review.
 
 
