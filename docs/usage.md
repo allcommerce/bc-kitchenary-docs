@@ -499,6 +499,35 @@ To change color background of this section click on **Background** and select co
 
 This section allow user change section tiltle, in **Hompage** find **Top Categories** type your text in **Heading**.
 
+### Shop For Kitchen
+
+![shop-for-kitchen](img/shop-for-kitchen.jpg)
+
+Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`.
+
+Select Column 1, set **Padding** = `0 0 0 0`. To change the **Background color** to `#F9F9F9`.
+
+Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shop for Kitchen, Home Appliances and More..."), select custom in **Text style** field, set **Font size** = `20px`, **Font weight** = `Semi Bold`, **Text color** = `#000000`, **Padding** = `40 0 40 0`, **Padding (Mobile)** = `20 0 20 0`.
+
+Drag & drop **Flex Banners | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Delete all other callouts except the first one.
+
+Choose the `Circle` option in the **Icon** section.
+
+For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `12.5%`, **Tablet** = `15.5%`, **Mobile** = `23%`.
+
+In the **Padding** section, set the values for different devices as follows: **Desktop** = `0 15 30 15`, **Tablet** = `0 8 0 8`, **Mobile** = `0 8 0 8`.
+
+![shop-for-kitchen-config](img/shop-for-kitchen-config.jpg)
+
+Select your desired icon in the **Icon** section.
+
+Modify the icon's **Color** to your preference.
+Paste the link into the designated **Link** box.
+
+Select `Custom` for the **Text style**. Set the **Font size** = `12px` for desktop devices. Adjust the **Font size(Mobile)** = `10px`. Customize the text content and choose your preferred **Text color**.
+
+Duplicate Icon-1 to create more similar icons. change the image and link of the icons just created.
+
 ### Special products tabs
 
 ![special-products-tabs](img/special-products-tabs.jpg)
