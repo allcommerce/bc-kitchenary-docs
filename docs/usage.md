@@ -475,7 +475,7 @@ To change tilte of this section, in **Hompage** find **Shopping guide & Newest U
 
 ![Shopping-guide-modal](img/Shopping-guide-modal.jpg)
 
-**Instructions for creating widgets in the Shopping Guide for quick viewing:**
+**Creating shopping list and other widget in Shopping Guide**
 
 You can replace video widget with other widget you want, in this example we use video widget.
 
