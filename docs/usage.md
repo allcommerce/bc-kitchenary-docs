@@ -652,13 +652,13 @@ Paste the map code into the HTML editor. Edit the **width** and **height** = `10
 
 **To display the map using an API key:**
 
-Configure the product cards in **Page Builder** > **Theme Styles** > **Footer** > **Main Footer**.
+Configure Footer map in **Page Builder** > **Theme Styles** > **Footer** > **Main Footer**.
 
 ![footer-map-api](img/footer-map-api.jpg)
 
 Enable the **Show Google map** option.
 
-Fill in your **Google Maps API key**. If you don't have an API key, please send us a help request for assistance.
+Fill in your **Google Maps API key**. If you don't have an API key, please see instruction at the link: `https://developers.google.com/maps/documentation/javascript/get-api-key`
 
 Enter the **Latitude, Longitude, and Zoom level** for the map. Separate the values with commas and ensure they are contiguous.
 
@@ -666,7 +666,7 @@ Example: `10.795005889833666, 106.72182056991105, 15`.
 
 To obtain the latitude and longitude values, follow these steps:
 
-Go to https://www.google.com/maps and enter the desired location.
+Go to `https://www.google.com/maps` and enter the desired location.
 Right-click on the marker icon on the map and copy the longitude and latitude values.
 
 ![gmap-lat-lng](img/gmap-lat-lng.jpg)
