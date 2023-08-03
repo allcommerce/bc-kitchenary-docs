@@ -475,6 +475,45 @@ To change tilte of this section, in **Hompage** find **Shopping guide & Newest U
 
 ![Shopping-guide-modal](img/Shopping-guide-modal.jpg)
 
+**Instructions for creating widgets in the Shopping Guide for quick viewing:**
+
+You can replace video widget with other widget you want, in this example we use video widget.
+
+Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`.
+
+![shopping-guide-video-widget](img/shopping-guide-video-widget.jpg)
+
+Select **Column 1**, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Video** widget into **Colum 1**. Copy the video link and paste it in the **Video URL** field.
+
+Save the changes and preview the widget on the homepage.
+
+![shopping-guide-video](img/shopping-guide-video.jpg)
+
+Creating a widget product list on the blog page:
+
+Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`.
+
+![shopping-guide-product-widget](img/shopping-guide-product-widget.jpg)
+
+Select **Column 1**, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shopping List"), select `custom` in **Text style** field, set **Font size** = `20px`, **Text color** = `#000000`, **Margin** = `0 0 16 0`, **Margin (Mobile)** = `0 0 16 0`.
+
+Drag & drop **Product List| PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Click on the **Add product icon** and enter the product name
+
+![shopping-guide-product-edit](img/shopping-guide-product-edit.jpg)
+
+In the **Element** section, enable the options to display the desired product information. Click on **Edit** for the **Add to Cart** button and turn on the **Show quantity box** option.
+
+![shopping-guide-product-edit-qty](img/shopping-guide-product-edit-qty.jpg)
+
+Save the changes and check the popup on the homepage.
+
+![Shopping-guide-modal](img/Shopping-guide-modal.jpg)
+
+
 ### Featured brands
 
 ![Featured-brand](img/featured-brand.jpg)
