@@ -606,6 +606,8 @@ Drag & drop **Layout** widget to the corresponding position, change **Column** =
 
 Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Our Customer Reviews"), select `custom` in **Text style** field, set **Font size** = `20px`, **Text color** = `#000000`, **Margin** = `36 0 16 0`, **Margin (Mobile)** = `18 0 0 0`.
 
+![customer-reviews-heading](img/customer-reviews-heading.png)
+
 Drag & drop **Customer Reviews | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Make sure to remove all reviews except for the first one.
 
 For each review, provide the following details:
