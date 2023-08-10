@@ -666,6 +666,35 @@ To display the recent blog posts on the home page, go to Page Builder. In Theme 
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795495559?h=4b4939afd5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-blog"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+### Customer Reviews
+
+![customer-reviews](img/customer-reviews.png)
+
+Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Our Customer Reviews"), select `custom` in **Text style** field, set **Font size** = `20px`, **Text color** = `#000000`, **Margin** = `36 0 16 0`, **Margin (Mobile)** = `18 0 0 0`.
+
+![customer-reviews-heading](img/customer-reviews-heading.png)
+
+Drag & drop **Customer Reviews | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Make sure to remove all reviews except for the first one.
+
+For each review, provide the following details:
+
+**Title**: Enter the title of the review.
+
+**Content**: Write the content of the review.
+
+**Rating**: Choose the desired number of review stars.
+
+**Author**: Specify the name of the reviewer.
+
+To maintain consistency in the theme, select `Beautify Furniture` in the **Style for theme** option.
+
+![customer-reviews-edit](img/customer-reviews-edit.png)
+
+If you want to add more reviews, duplicate the first review as many times as needed and update the content for each review.
+
+
 ### Newsletter
 
 ![edit-newsletter](img/edit-newsletter.jpg)
