@@ -37,7 +37,7 @@ Verify the widgets installed successfully if they appear in Page Builder:
 ![custom-widgets-appear](img/custom-widgets-appear.jpg)
 
 
-## Setting Up Kitchenary Style Home Page
+## Setting Up Cooking Style Home Page
 
 To start customizing the theme, login to your admin panel, go to **Storefront** > **My Themes**, click **Customize** button next to theme thumbnail.
 
@@ -54,7 +54,7 @@ To configure the header, click on **Theme Styles** > **Header** section, here yo
 
 **Watch the instruction video:**
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796872043?h=5d2873e4a6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-header"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="760" height="515" src="https://www.youtube.com/embed/Ry8ANybgdSI?si=ZIJXrTKBdDY4IXn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Webpage Outliner
 
@@ -114,11 +114,12 @@ To config style of main navigation, click on **Theme Styles** > **Header**. In *
 
 ![column-menu](img/column-menu.jpg)
 
-You can also hide or **Show web page links** and **Show widgets in the mega menu**.
+To create banner on Megamenu, in **Header** find and checked **Show widgets in mega menu** to show **edit menu widget** button.
 
-**Watch the instruction video:**
+Click on **edit menu widget** button to open Mega menu in design mode.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796851987?h=a75fba7b62&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-main navigation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+![edit-widget-megamenu](img/edit-widget-button.jpg)
+
 
 #### Hide webpage links
 
@@ -135,7 +136,7 @@ For example: if you only want show **Theme Features** and **shipping & return**:
 
 Note: the order will only count non-categories link.
 
-Before
+Before:
 
 ![web-links-order](img/web-links-order.jpg)
 
@@ -150,27 +151,23 @@ Go back to **Storefront** > **My Themes** > click **Customize** button beside th
 
 **Watch the instruction video:**
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795121977?h=6bd7a34407&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-top banner"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="760" height="515" src="https://www.youtube.com/embed/yvkQCvDx3Fc?si=WJek4U1BstkN2sFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Ad Banner displays on all pages
 
 To display the ad banner appearing on all pages on the header, drag and drop the HTML widget to the corresponding position, paste the given code below to the HTML editor, then click Save HTML button.
 
 ```html
-<p data-marquee>
-  <span class="button button--primary button--small">10% Off</span>
-  <span>&nbsp;&nbsp;&nbsp;$50+ WHEN YOU BUY ONLINE & PICK UP IN - STORE&nbsp;&nbsp;&nbsp;</span>
-  <span style="color: rgba(255,255,255,0.3)">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-  <span>SAVE 35% ON YOUR FIRST&nbsp;&nbsp;&nbsp;</span>
-  <a href="/store">LEARN MORE</a>
+<p style="display:flex; align-items: center">
+<span style="font-size: 24px">&#127881;</span>
+<span>&nbsp;<strong>Buy More, Save More!</strong> Get <strong>10%</strong> off when you purchase <strong>2+</strong> or more of our products.&nbsp;&nbsp;&nbsp;</span>
 </p>
 ```
 
-The code allows to animate the text sliding from left to right on smaller screen.
 
 **Watch the instruction video:**
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796851998?h=9896b97f44&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Instr-header banner"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="760" height="515" src="https://www.youtube.com/embed/X-0U2gh2S54?si=LuJfGRh2pjO7FSL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pictre-in-picture; web-share" allowfullscreen></iframe>
 
 ### Main carousel
 
@@ -371,40 +368,13 @@ To change Background of button, go to **General** find **General colors** change
 
 To change **Text**, **Icon** and **Hover** color go to **General** find **Links colors** change **Default** to your color.
 
-![edit-instagram](img/edit-instagram.png)
-
-To display your Instagram photos, open <https://instagram.papathemes.com/> Follow the instruction on this page to [Connect your Facebook Page with your Instagram account](https://www.facebook.com/business/help/898752960195806). Then click **Login With Facebook** button and follow the further steps to authorize access permission. Click **Show Embedding Code** button to generate the code embedding to your web store. Choose **Preset** = `Carousel` and select **LazyLoad**.
-
-Copy all the code appear in Step 1 & Step 2. For example:
-
-```html
-<script>!function(){var a=document.createElement("script");a.defer=!0,a.src="https://papathemes.s3.amazonaws.com/instagramapp/assets/js/embed-1.0.1.js",a.onload=function(){PapathemesInstagramApp.init({account_id:"****************",element_id:"papainstagram-render",limit:"20",preset:"grid",lazyload:"false"})},document.body.appendChild(a)}();</script>
-
-<div id="papainstagram-render"></div>
-```
-
-Go back to your store Page Builder. Drag & drop the HTML widget to the corresponding position. Paste the generated code above to the HTML editor, and click **Save HTML** button. Your Instagram photos should display like our demo store.
-
-Please note that the app only updates your latest uploaded photos every 6 hours.
-
-To create the title, drag & drop the **Section Heading** widget to above the Instagram photos. Set **Padding** = `40 0 40 0` and **Padding (Mobile)** = `20 0 20 0`.
-
-**Watch the instruction video:**
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795504772?h=06cb1784a7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-instagram"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-
 ### Recent blog posts
 
 ![edit-recent-blog](img/edit-recent-blog.jpg)
 
 You can add blog posts in Storefront > Blog. Click the **+** button to add a new blog post. Make sure **Blog Visibility** is `on`.
 
-To display the recent blog posts on the home page, go to Page Builder. In Theme Styles > Home Page, make sure one of Sections has **Recent Blog** selected. Scroll down the Recent Blog section, you can configure **Heading**, **Number of posts** to display. Select **Style** = `Grocery` to display like our demo store. You can change the **Background color** = `#ffffff` or any color you want.
-
-**Watch the instruction video:**
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795495559?h=4b4939afd5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-blog"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+To display the recent blog posts on the home page, go to Page Builder. In **Theme Styles** > **Home Page**, make sure one of Sections has typed `blog_recent`. Scroll down the Recent Blog section, you can configure **Heading**, **Number of posts** to display.
 
 ### Customer Reviews
 
@@ -446,7 +416,7 @@ Make sure **Show newsletter form** is selected. You can change the **Heading**, 
 
 **Watch the instruction video:**
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795101779?h=5c3393ce06&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-newsletter"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="760" height="515" src="https://www.youtube.com/embed/5HxXt7uaX5c?si=QjmxVqePqgfLxxm6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ### Footer
@@ -461,7 +431,7 @@ In **Page Builder** > **Theme Styles** > **Footer**, you can configure the newsl
 
 **Watch the instruction video:**
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795439897?h=4ef5896555&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-footer"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe width="760" height="515" src="https://www.youtube.com/embed/A481Na0Ec0Y?si=l12B8xW6ZszZjqp7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Footer Map
 
@@ -666,11 +636,11 @@ In **Page Builder** > **Theme Styles** > **Products** > **Product Page**:
 ### Custom tabs
 
 ![Custom-tab-sample](img\custom-tab-sample.jpg)
-To add the custom tabs and product pages, edit your product description, click on HTML button to open HTML Source Editor:
+To add the **custom tabs** in product pages, edit your product description, click on **HTML button** to open HTML Source Editor:
 
 ![Custom-tab](img\custom-tab.jpg)
 
-Use the editor in the [link](https://bc-supermarket-docs.papathemes.com/customization/product-page#custom-tabs) to generate HTML for your custom tabs. Click Export HTML button, copy & paste the generated HTML at the end of HTML Source Editor.
+Use the editor at the **[link](https://bc-supermarket-docs.papathemes.com/customization/product-page#custom-tabs)** to generate HTML for your **custom tabs**. Click Export HTML button, copy & paste the generated HTML at the end of HTML Source Editor.
 
 ### Displaying Delivery & Returns tab
 
@@ -698,11 +668,11 @@ In **Page Builder** > **Theme Styles** > **Products** > **Product Page**:
 
 In **Page Builder** > **Theme Styles** > **Products** > **Swatch display type**:
 
-- Default (Square): Displaying the regular swatches by default.
-- Dropdown: Displaying swatches in the dropdown select box.
-- Dropdown + Square: Displaying swatches in the dropdown select box in addition to regular swatches.
+- `Default` (Square): Displaying the regular swatches by default.
+- `Dropdown`: Displaying swatches in the dropdown select box.
+- `Dropdown + Square`: Displaying swatches in the dropdown select box in addition to regular swatches.
 
-![swatch-dropdown](img/swatch-dropdown.png)
+![swatch-dropdown](img/swatch-dropdown.jpg)
 
 
 ### Displaying Frequently Bought Together Products
@@ -818,11 +788,11 @@ In **Page Builder** > **Theme Styles** > **Products** > **Product Page** find **
 
 Videos displayed in **tab** options:
 
-![video image product detail tab option](img/video-image-PDP-tab.png)
+![video image product detail tab option](img/video-image-PDP-tab.jpg)
 
 Videos displayed in **image gallery** option:
 
-![video image product detail image gallery option](img/video-image-PDP-image-gallery.png)
+![video image product detail image gallery option](img/video-image-PDP-image-gallery.jpg)
 
 ## Customizing Category Pages
 
@@ -847,9 +817,9 @@ Theme supports displaying products in grid mode (2, 3, 4 or 6 products per row),
 - **Display type** on the right allow your customers to change product category display by themselves.
 ![products-display-type-by-customer](img/products-display-type-by-customer.jpg)
 
-**Grid 6 columns:**
+**Grid 5 columns:**
 
-![products-display-type-grid6](img/products-display-type-grid6.jpg)
+![products-display-type-grid5](img/products-display-type-grid5.jpg)
 
 **List mode:**
 
