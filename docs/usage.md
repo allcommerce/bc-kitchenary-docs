@@ -289,7 +289,7 @@ Drag & drop **Layout widget** to the corresponding position, change **Column** =
 
 Select Column 1, set **Padding** = `0 0 0 0`. To change the **Background color** to `#F9F9F9`.
 
-Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shop for Kitchen, Home Appliances and More..."), select custom in **Text style** field, set **Font size** = `20px`, **Font weight** = `Semi Bold`, **Text color** = `#000000`, **Padding** = `40 0 40 0` and **Padding (Mobile)** = `20 0 20 0`.
+Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shop for Kitchen, Home Appliances and More..."), select custom in **Text style** field, set **Font size** = `20px`, **Font weight** = `Semi Bold`, **Text color** = `#000000`, **Padding** = `40 0 40 0`, **Padding (Mobile)** = `20 0 20 0`.
 
 Drag & drop **Flex Banners | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Delete all other callouts except the first one.
 
