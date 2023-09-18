@@ -560,13 +560,13 @@ Drag & drop **Layout widget** to the corresponding position, change **Column** =
 
 Drag & drop **Leaderboard Banner| PapaThemes Beautify**, set **Banner height** = `800px` and **Banner height(mobile)** = `369px`. Consider the background color of you want **Background color**.
 
-Custom image of desktop in **Image**, image of tablet and mobile in **Image(mobile)**. Turn off **Display in container div**
+There is a custom image of a desktop in the **Image**, and an image of a tablet and mobile in the **Image(mobile)**. Unchecked **Display in container div**
 
-In **Heading**, **Heading Style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `32px`, **Heading color** and **Heading color(mobile)** = `#FFFFFF`.
+In **Heading**, set **Heading Style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `32px`, **Heading color** and **Heading color(mobile)** = `#FFFFFF`.
 
-In **Text**, **Font Size** = `16px`, **Text color** and **Text color(mobile)** = `#FFFFFF`.
+In **Text**, set **Font Size** = `16px`, **Text color** and **Text color(mobile)** = `#FFFFFF`.
 
-In **Button**, **Button color** and **Button text color hover** = `#FFFFFF`, **Button color hover** and **Button text color** = `#0F49A0`. 
+In **Button**, set **Button color** and **Button text color hover** = `#FFFFFF`, **Button color hover** and **Button text color** = `#0F49A0`. 
 
 In **ADVANCED**, choose **style for theme** = `Kitchenary`.
 
@@ -584,15 +584,15 @@ Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**.
 
 To edit **Banner 1**, change your image, set **Image width** = `1800`, **Image height** = `900`, **Border radius** = `0px`.
 
-In **Content**, set **Content padding** = `15 20 15 20`, custom background color **Content background** you want. **Content padding(Tablet)** and **Content padding(Mobile)** = `15 20 15 20`.
+In **Content**, set **Content padding** = `15 20 15 20` for all values, you can choose the custom background color for the **Content background** as per your preference.
 
-In **Heading text**, **Text style** = `Custom`, **font weight** = `Light`, **font size** = `16px` and **font size(mobile)** = `14px`. **Text color** and **Text color hover** = `#0F49A0`.
+In **Heading text**, set **Text style** = `Custom`, **font weight** = `Light`, **font size** = `16px` and **font size(mobile)** = `14px`, **Text color** and **Text color hover** = `#0F49A0`.
 
-Turn on **Action button**, set **Position** = `Right`.
+Tick **Action button**, set **Position** = `Right`.
 
 In **General**, choose **Width** = `%`, set **Value (Desktop)** and **Value (Tablet)** = `50%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** and **Tablet** =` 0 15 30 15`, **Mobile** = `0 0 15 0`.
 
-In **Settings** > **General**, set **Style for theme** = `Kitchenary`, turn off `Display content overlaying banner on mobile`.
+In **Settings** > **General**, set **Style for theme** = `Kitchenary`, unchecked `Display content overlaying banner on mobile`.
 
 Duplicate **Banner 1** to 4 banners.
 
@@ -618,7 +618,7 @@ In **Description text**, set **Font weight** = `Light`, **Font size** and **Font
 
 In **General**, choose **Width** = `%`, set **Value (Desktop)** and **Value (Tablet)** = `33,33333%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** and **Tablet** =` 0 15 0 15`, **Mobile** = `0 0 30 0`.
 
-In **Settings** > **General**, set **Style for theme** = `Kansha Sport`, turn off `Display content overlaying banner on mobile`.
+In **Settings** > **General**, set **Style for theme** = `Kansha Sport`, unchecked `Display content overlaying banner on mobile`.
 
 Duplicate **Banner 1** to 3 banners.
 
@@ -638,13 +638,13 @@ Choose the `Large` option in the Icon section.
 
 For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `16,5%`, **Tablet** = `33,33%`, **Mobile** = `50%`.
 
-In the **Padding** section, set the values for different devices as follows: **Desktop** = `45 5 45 5`, **Tablet** = `20 5 20 5` and **Mobile** = `20 5 20 5`.
+In the **Padding** section, set the values for different devices as follows: **Desktop** = `45 5 45 5`, **Tablet** and **Mobile** = `20 5 20 5`.
 
 Select your desired icon in the **Icon** section.
 
-In **Show text**, set **font weight** = `Semi Bold(Demi Bold)`, **font size** and **font size(Mobile)** = `14px`, **text color** = `#FFFFFF` and **text color hover** = `#74B3EA`.
+In **Show text**, set **font weight** = `Semi Bold(Demi Bold)`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#FFFFFF` and **text color (hover)** = `#74B3EA`.
 
-Turn on **Show second text**, set **font weight** = `Normal`, **font size** and **font size(Mobile)** = `14px`, **text color** = `#B8C5D8` and **text color(hover)** = `#74B3EA`
+Checked **Show second text**, set **font weight** = `Normal`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#B8C5D8` and **text color (hover)** = `#74B3EA`
 
 Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 
