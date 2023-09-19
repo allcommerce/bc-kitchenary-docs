@@ -418,6 +418,31 @@ Make sure **Show newsletter form** is selected. You can change the **Heading**, 
 
 <iframe width="760" height="515" src="https://www.youtube.com/embed/5HxXt7uaX5c?si=QjmxVqePqgfLxxm6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+### Benefit
+
+Desktop :
+
+![Benefit](img/benefit.jpg)
+
+To create **Benefit**:
+
+In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag and drop **Callout Icons | PapaThemes Beautify** widget into **Column 1**. Delete all other callouts except the first one.
+
+Choose the `Large` option in the Icon section.
+
+For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `16,5%`, **Tablet** = `33,33%`, **Mobile** = `50%`.
+
+In the **Padding** section, set the values for different devices as follows: **Desktop** = `45 5 45 5`, **Tablet** and **Mobile** = `20 5 20 5`.
+
+Select your desired icon in the **Icon** section.
+
+In **Show text**, set **font weight** = `Semi Bold(Demi Bold)`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#FFFFFF` and **text color (hover)** = `#74B3EA`.
+
+Checked **Show second text**, set **font weight** = `Normal`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#B8C5D8` and **text color (hover)** = `#74B3EA`
+
+Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 
 ### Footer
 
@@ -560,7 +585,7 @@ Drag & drop **Layout widget** to the corresponding position, change **Column** =
 
 Drag & drop **Leaderboard Banner| PapaThemes Beautify**, set **Banner height** = `800px` and **Banner height(mobile)** = `369px`. Consider the background color of you want **Background color**.
 
-There is a custom image of a desktop in the **Image**, and an image of a tablet and mobile in the **Image(mobile)**. Unchecked **Display in container div**
+You can customize the desktop image in the **Image** section, and also modify the images for the tablet and mobile screens in the **Image (mobile)** section. Unchecked **Display in container div**
 
 In **Heading**, set **Heading Style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `32px`, **Heading color** and **Heading color(mobile)** = `#FFFFFF`.
 
@@ -584,11 +609,11 @@ Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**.
 
 To edit **Banner 1**, change your image, set **Image width** = `1800`, **Image height** = `900`, **Border radius** = `0px`.
 
-In **Content**, set **Content padding** = `15 20 15 20` for all values, you can choose the custom background color for the **Content background** as per your preference.
+In **Content** > **Content padding** = `15 20 15 20` for all values, you can choose the custom background color for the **Content background** as per your preference.
 
-In **Heading text**, set **Text style** = `Custom`, **font weight** = `Light`, **font size** = `16px` and **font size(mobile)** = `14px`, **Text color** and **Text color hover** = `#0F49A0`.
+In **Content** > **Heading text**, set **Text style** = `Custom`, **font weight** = `Light`, **font size** = `16px` and **font size(mobile)** = `14px`, **Text color** and **Text color hover** = `#0F49A0`.
 
-Tick **Action button**, set **Position** = `Right`.
+In **Content** > activate the **Action button**, set **Position** = `Right`.
 
 In **General**, choose **Width** = `%`, set **Value (Desktop)** and **Value (Tablet)** = `50%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** and **Tablet** =` 0 15 30 15`, **Mobile** = `0 0 15 0`.
 
@@ -612,41 +637,15 @@ To edit **Banner 1**, change your image, set **Image width** = `1170`, **Image h
 
 In **Content** > **Content Padding** set `15 0 0 0` for all values.
 
-In **Heading text**, set **Text style** = `Custom`, **font weight** = `Bold`, **font size** and **font size(mobile)** = `16px`, **Text color** = `#0F49A0`.
+In **Content** > **Heading text**, set **Text style** = `Custom`, **font weight** = `Bold`, **font size** and **font size(mobile)** = `16px`, **Text color** = `#0F49A0`.
 
-In **Description text**, set **Font weight** = `Light`, **Font size** and **Font size (Mobile)** = `16px`, **Text color** and **Text color (Mobile)** = `#000000`, **Text color hover** and **Text color hover (Mobile)** = `#0F49A0`.
+In **Content** > activate the **Description text**, set **Font weight** = `Light`, **Font size** and **Font size (Mobile)** = `16px`, **Text color** and **Text color (Mobile)** = `#000000`, **Text color hover** and **Text color hover (Mobile)** = `#0F49A0`.
 
 In **General**, choose **Width** = `%`, set **Value (Desktop)** and **Value (Tablet)** = `33,33333%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** and **Tablet** =` 0 15 0 15`, **Mobile** = `0 0 30 0`.
 
 In **Settings** > **General**, set **Style for theme** = `Kansha Sport`, unchecked `Display content overlaying banner on mobile`.
 
 Duplicate **Banner 1** to 3 banners.
-
-### Benefit
-
-Desktop :
-
-![Benefit](img/benefit.jpg)
-
-To create **Benefit**:
-
-In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
-
-Drag and drop **Callout Icons | PapaThemes Beautify** widget into **Column 1**. Delete all other callouts except the first one.
-
-Choose the `Large` option in the Icon section.
-
-For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `16,5%`, **Tablet** = `33,33%`, **Mobile** = `50%`.
-
-In the **Padding** section, set the values for different devices as follows: **Desktop** = `45 5 45 5`, **Tablet** and **Mobile** = `20 5 20 5`.
-
-Select your desired icon in the **Icon** section.
-
-In **Show text**, set **font weight** = `Semi Bold(Demi Bold)`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#FFFFFF` and **text color (hover)** = `#74B3EA`.
-
-Checked **Show second text**, set **font weight** = `Normal`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#B8C5D8` and **text color (hover)** = `#74B3EA`
-
-Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 
 ## Customizing Products Display
 
