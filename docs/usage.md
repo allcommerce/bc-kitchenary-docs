@@ -383,9 +383,9 @@ You can customize the desktop image in the **Image** section, and also modify th
 
 In **Heading**, set **Heading Style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `32px`, **Heading color** and **Heading color(mobile)** = `#FFFFFF`.
 
-In **Text**, set **Font Size** = `16px`, **Text color** and **Text color(mobile)** = `#FFFFFF`.
+In **Text**, set **Font Size** = `16px`, **Font weight** = `Medium`, **Text color** and **Text color(mobile)** = `#FFFFFF`.
 
-In **Button**, set **Button color** and **Button text color hover** = `#FFFFFF`, **Button color hover** and **Button text color** = `#0F49A0`. 
+In **Button**, set **Button color** = `#FB9A43`
 
 In **Advanced**, choose **style for theme** = `Kitchenary`.
 ### Recently Viewed Products
