@@ -326,6 +326,31 @@ You can set featured products in **Products**, click the **star** icon on the sa
 
 Go back to **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `featured_products`. In **Featured products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
+### Four Cooking banners
+
+![four-cooking-banners](img/four-cooking-banners.jpg)
+
+To create **Four Cooking banners** :
+
+In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**.
+
+To edit **Banner 1**, change your image, set **Image width** = `1200px`, **Image height** = `760px`. Show different image on mobile and upload your image, set **Image width (Mobile)** = `800px`, **Image height (Mobile)** = `700px`, **Border radius** = `4px`.
+
+In **Content** > set **Content Align** follow **vertical** = `bottom`, **Content padding** and **Content padding (Tablet)** = `0 20 15 20`, **Content padding (Mobile)** = `0 15 10 15`.
+
+In **Content** > **Heading text** set **Text style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `16px`, **Font size(Mobile)** = `14px`, **Text color** = `#FFFFFF`.
+
+In **Content** > activate the **Description text**, set **Font weight** = `Normal`, **Font size** = `16px`, **Font size (Mobile)** = `14px`, **Text color** = `#FFFFFF`
+
+In **Content** > activate the **Action button**, set **Position** = `Right`.
+
+In **General** > **Width** panel choose **Width** = `%`, set **Value (Desktop)** = `50%`, **Value (Tablet)** and **Value (Mobile)** = `100%`.
+
+In **General** > **Padding**, set **Desktop** = `0 15 30 0`, **Tablet** = `0 0 20 0` and **Mobile** = `0 0 15 0`.
+
+Duplicate to 4 banners and upload images according to each banner.
 ### New products
 
 ![new-products](img/New-products.jpg)
@@ -340,6 +365,29 @@ Bestselling products only display when your store has some order.
 
 You can configure bestselling products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `popular_products`. In **Best-sellers products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
+### Banner
+
+Desktop : 
+
+![Banner](img/banner.jpg)
+
+Mobile : 
+
+![Banner](img/banner-mobile.jpg)
+
+Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Leaderboard Banner| PapaThemes Beautify**, set **Banner height** = `800px` and **Banner height(mobile)** = `369px`. Consider the background color of you want **Background color**.
+
+You can customize the desktop image in the **Image** section, and also modify the images for the tablet and mobile screens in the **Image (mobile)** section. Unchecked **Display in container div**
+
+In **Heading**, set **Heading Style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `32px`, **Heading color** and **Heading color(mobile)** = `#FFFFFF`.
+
+In **Text**, set **Font Size** = `16px`, **Text color** and **Text color(mobile)** = `#FFFFFF`.
+
+In **Button**, set **Button color** and **Button text color hover** = `#FFFFFF`, **Button color hover** and **Button text color** = `#0F49A0`. 
+
+In **Advanced**, choose **style for theme** = `Kitchenary`.
 ### Recently Viewed Products
 
 ![bestselling-products](img/Recently-viewed-products.jpg)
@@ -531,6 +579,7 @@ You can read these common instructions in **Setting Up Cooking Style Home Page**
 - [Top Categories](#top-categories)
 - [Featured brands](#featured-brands)
 - [Bestselling products](#bestselling-products)
+- [Banner](#banner)
 - [Featured products](#featured-products)
 - [New products](#new-products)
 - [Recently viewed products](#recently-viewed-products)
@@ -569,32 +618,6 @@ Select **Icon** = `Choose Image`, change the image to suit your needs in the **I
 Select `Custom` for the **Text style**. Set the **Font size** = `12px` for desktop devices. Adjust the **Font size(Mobile)** = `10px`. Customize the text content and choose your preferred **Text color**.
 
 Duplicate Icon-1 to create more similar icons. change the image and link of the icons just created.
-
-### Banner Your Health
-
-Desktop : 
-
-![Banner Your Health](img/banner-your-health.jpg)
-
-Mobile : 
-
-![Banner Your Health](img/banner-your-health-mobile.jpg)
-
-
-Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
-
-Drag & drop **Leaderboard Banner| PapaThemes Beautify**, set **Banner height** = `800px` and **Banner height(mobile)** = `369px`. Consider the background color of you want **Background color**.
-
-You can customize the desktop image in the **Image** section, and also modify the images for the tablet and mobile screens in the **Image (mobile)** section. Unchecked **Display in container div**
-
-In **Heading**, set **Heading Style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `32px`, **Heading color** and **Heading color(mobile)** = `#FFFFFF`.
-
-In **Text**, set **Font Size** = `16px`, **Text color** and **Text color(mobile)** = `#FFFFFF`.
-
-In **Button**, set **Button color** and **Button text color hover** = `#FFFFFF`, **Button color hover** and **Button text color** = `#0F49A0`. 
-
-In **ADVANCED**, choose **style for theme** = `Kitchenary`.
-
 ### Four Banner
 
 Desktop :
