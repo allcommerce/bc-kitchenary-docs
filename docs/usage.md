@@ -326,6 +326,31 @@ You can set featured products in **Products**, click the **star** icon on the sa
 
 Go back to **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `featured_products`. In **Featured products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
+### Four Cooking banners
+
+![four-cooking-banners](img/four-cooking-banners.jpg)
+
+To create **Four Cooking banners** :
+
+In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**.
+
+To edit **Banner 1**, change your image, set **Image width** = `1200px`, **Image height** = `760px`. Show different image on mobile and upload your image, set **Image width (Mobile)** = `800px`, **Image height (Mobile)** = `700px`, **Border radius** = `4px`.
+
+In **Content** > set **Content Align** follow **vertical** = `bottom`, **Content padding** and **Content padding (Tablet)** = `0 20 15 20`, **Content padding (Mobile)** = `0 15 10 15`.
+
+In **Content** > **Heading text** set **Text style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `16px`, **Font size(Mobile)** = `14px`, **Text color** = `#FFFFFF`.
+
+In **Content** > activate the **Description text**, set **Font weight** = `Normal`, **Font size** = `16px`, **Font size (Mobile)** = `14px`, **Text color** = `#FFFFFF`
+
+In **Content** > activate the **Action button**, set **Position** = `Right`.
+
+In **General** > **Width** panel choose **Width** = `%`, set **Value (Desktop)** = `50%`, **Value (Tablet)** and **Value (Mobile)** = `100%`.
+
+In **General** > **Padding**, set **Desktop** = `0 15 30 0`, **Tablet** = `0 0 20 0` and **Mobile** = `0 0 15 0`.
+
+Duplicate to 4 banners and upload images according to each banner.
 ### New products
 
 ![new-products](img/New-products.jpg)
@@ -340,6 +365,29 @@ Bestselling products only display when your store has some order.
 
 You can configure bestselling products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `popular_products`. In **Best-sellers products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
+### Banner
+
+Desktop : 
+
+![Banner](img/banner.jpg)
+
+Mobile : 
+
+![Banner](img/banner-mobile.jpg)
+
+Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Leaderboard Banner| PapaThemes Beautify**, set **Banner height** = `800px` and **Banner height(mobile)** = `369px`. Consider the background color of you want **Background color**.
+
+You can customize the desktop image in the **Image** section, and also modify the images for the tablet and mobile screens in the **Image (mobile)** section. Unchecked **Display in container div**
+
+In **Heading**, set **Heading Style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `32px`, **Heading color** and **Heading color(mobile)** = `#FFFFFF`.
+
+In **Text**, set **Font Size** = `16px`, **Font weight** = `Medium`, **Text color** and **Text color(mobile)** = `#FFFFFF`.
+
+In **Button**, set **Button color** = `#FB9A43`
+
+In **Advanced**, choose **style for theme** = `Kitchenary`.
 ### Recently Viewed Products
 
 ![bestselling-products](img/Recently-viewed-products.jpg)
@@ -418,6 +466,31 @@ Make sure **Show newsletter form** is selected. You can change the **Heading**, 
 
 <iframe width="760" height="515" src="https://www.youtube.com/embed/5HxXt7uaX5c?si=QjmxVqePqgfLxxm6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+### Benefit
+
+Desktop :
+
+![Benefit](img/benefit.jpg)
+
+To create **Benefit**:
+
+In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag and drop **Callout Icons | PapaThemes Beautify** widget into **Column 1**. Delete all other callouts except the first one.
+
+Choose the `Large` option in the Icon section.
+
+For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `16,5%`, **Tablet** = `33,33%`, **Mobile** = `50%`.
+
+In the **Padding** section, set the values for different devices as follows: **Desktop** = `45 5 45 5`, **Tablet** and **Mobile** = `20 5 20 5`.
+
+Select your desired icon in the **Icon** section.
+
+In **Show text**, set **font weight** = `Semi Bold(Demi Bold)`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#FFFFFF` and **text color (hover)** = `#74B3EA`.
+
+Checked **Show second text**, set **font weight** = `Normal`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#B8C5D8` and **text color (hover)** = `#74B3EA`
+
+Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 
 ### Footer
 
@@ -491,6 +564,111 @@ In **design** you can type your link content and click on the **insert/edit link
 In the popup window, copy your web link to `URL`. On the **Open links..** field you can select how your link could be open in **New Window** or **Current Window**
  
  ![Insert-links](img/insert-links.jpg)
+
+## Setting Up Pharmacy Style Home Page
+
+### General
+
+You can read these common instructions in **Setting Up Cooking Style Home Page** chapter:
+
+- [Header](#header)
+- [Top Banner](#top-banner)
+- [Ad Banner displays on all pages](#ad-banner-displays-on-all-pages)
+- [Main carousel](#main-carousel)
+- [Shopping Guide](#shop-guide)
+- [Top Categories](#top-categories)
+- [Featured brands](#featured-brands)
+- [Bestselling products](#bestselling-products)
+- [Banner](#banner)
+- [Featured products](#featured-products)
+- [New products](#new-products)
+- [Recently viewed products](#recently-viewed-products)
+- [Customer service](#customer-service)
+- [Recent blog posts](#recent-blog-posts)
+- [Customer reviews](#customer-reviews)
+- [Newsletter](#newsletter)
+- [Footer](#footer)
+- [Footer Map](#footer-map)
+- [Display custom footer links](#display-custom-footer-links)
+### Shop for All Your Health & Wellness Needs
+Desktop :
+
+![Shop Health](img/shop-health.jpg)
+
+Mobile :
+
+![Shop Health](img/shop-health-mobile.jpg)
+
+Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shop for All Your Health & Wellness Needs"), select custom in **Text style** field, set **Font size** = `20px`, **Font size(Mobile)** = `18px`, **Font weight** = `Extra Bold`, **Text color** = `#0F49A0`, **Padding** = `10 0 40 0` and **Padding (Mobile)** = `18 0 18 0`.
+
+Drag & drop **Callout Icons | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Delete all other callouts except the first one.
+
+Choose the `Circle` option in the **Icon** section.
+
+For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `12.5%`, **Tablet** = `15.5%` and **Mobile** = `23%`.
+
+In the **Padding** section, set the values for different devices as follows: **Desktop** = `0 15 30 15`, **Tablet** and **Mobile** = `0 8 0 8`.
+
+![shop-healthy-config](img/shop-healthy-config.jpg)
+
+Select **Icon** = `Choose Image`, change the image to suit your needs in the **Icon Image**. Paste the link into the designated **Link** box.
+
+Select `Custom` for the **Text style**. Set the **Font size** = `12px` for desktop devices. Adjust the **Font size(Mobile)** = `10px`. Customize the text content and choose your preferred **Text color**.
+
+Duplicate Icon-1 to create more similar icons. change the image and link of the icons just created.
+### Four Banner
+
+Desktop :
+
+![four-banner](img/four.jpg)
+
+To create **Four Banner** :
+
+In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**.
+
+To edit **Banner 1**, change your image, set **Image width** = `1800`, **Image height** = `900`, **Border radius** = `0px`.
+
+In **Content** > **Content padding** = `15 20 15 20` for all values, you can choose the custom background color for the **Content background** as per your preference.
+
+In **Content** > **Heading text**, set **Text style** = `Custom`, **font weight** = `Light`, **font size** = `16px` and **font size(mobile)** = `14px`, **Text color** and **Text color hover** = `#0F49A0`.
+
+In **Content** > activate the **Action button**, set **Position** = `Right`.
+
+In **General**, choose **Width** = `%`, set **Value (Desktop)** and **Value (Tablet)** = `50%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** and **Tablet** =` 0 15 30 15`, **Mobile** = `0 0 15 0`.
+
+In **Settings** > **General**, set **Style for theme** = `Kitchenary`, unchecked `Display content overlaying banner on mobile`.
+
+Duplicate **Banner 1** to 4 banners.
+
+### Three Banners
+
+Desktop : 
+
+![three banners](img/three-banners.jpg)
+
+To create **Three Banners** :
+
+In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag and drop **Flex Banners | PapaThemes Beautify** widget.
+
+To edit **Banner 1**, change your image, set **Image width** = `1170`, **Image height** = `781`, **Border radius** = `4px`.
+
+In **Content** > **Content Padding** set `15 0 0 0` for all values.
+
+In **Content** > **Heading text**, set **Text style** = `Custom`, **font weight** = `Bold`, **font size** and **font size(mobile)** = `16px`, **Text color** = `#0F49A0`.
+
+In **Content** > activate the **Description text**, set **Font weight** = `Light`, **Font size** and **Font size (Mobile)** = `16px`, **Text color** and **Text color (Mobile)** = `#000000`, **Text color hover** and **Text color hover (Mobile)** = `#0F49A0`.
+
+In **General**, choose **Width** = `%`, set **Value (Desktop)** and **Value (Tablet)** = `33,33333%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** and **Tablet** =` 0 15 0 15`, **Mobile** = `0 0 30 0`.
+
+In **Settings** > **General**, set **Style for theme** = `Kansha Sport`, unchecked `Display content overlaying banner on mobile`.
+
+Duplicate **Banner 1** to 3 banners.
 
 ## Customizing Products Display
 
