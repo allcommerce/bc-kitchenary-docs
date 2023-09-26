@@ -308,7 +308,7 @@ Paste the link into the designated **Link** box.
 
 Select `Custom` for the **Text style**. Set the **Font size** = `12px` for desktop devices. Adjust the **Font size(Mobile)** = `10px`. Customize the text content and choose your preferred **Text color**.
 
-Duplicate Icon-1 to create more similar icons. change the image and link of the icons just created.
+Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 
 ### Special products tabs
 
@@ -400,7 +400,7 @@ You can configure recently viewed products section settings in **Page Builder** 
 
 ![customer-service](img/customer-service.jpg)
 
-To enable **Customer service**, in **Theme Styles** > **Homepage** > **Section** choose one of sections and type `top_categories` to enable this block.
+To enable **Customer service**, in **Theme Styles** > **Homepage** > **Section** choose one of sections and type `customer_service` to enable this block.
 
 To change color background of this section click on Background and select color fit to design.
 
@@ -414,7 +414,7 @@ This section allow user change section tiltle, in **Hompage** find **Customer se
 
 To change Background of button, go to **General** find **General colors** change **Secondary color** to your color.
 
-To change **Text**, **Icon** and **Hover** color go to **General** find **Links colors** change **Default** to your color.
+To change **Text**, **Icon**, color go to **General** find **Links colors** change **Default** to your color.
 
 ### Recent blog posts
 
@@ -422,7 +422,7 @@ To change **Text**, **Icon** and **Hover** color go to **General** find **Links 
 
 You can add blog posts in Storefront > Blog. Click the **+** button to add a new blog post. Make sure **Blog Visibility** is `on`.
 
-To display the recent blog posts on the home page, go to Page Builder. In **Theme Styles** > **Home Page**, make sure one of Sections has typed `blog_recent`. Scroll down the Recent Blog section, you can configure **Heading**, **Number of posts** to display.
+To display the **recent blog** posts on the home page, go to **Page Builder**. In **Theme Styles** > **Home Page**, make sure one of Sections has typed `blog_recent`. Scroll down the Recent Blog section, you can configure **Heading**, **Number of posts** to display.
 
 ### Customer Reviews
 
@@ -459,7 +459,8 @@ If you want to add more reviews, duplicate the first review as many times as nee
 
 To enable newsletter form, go to **Marketing** > **Email Marketing**, make sure **Allow Newsletter Subscriptions** is checked. Optionally select **Show Newsletter Summary** and enter the summary text as you want.
 
-Go to Page Builder, in **Theme Styles** > **Footer** > **Newsletter** section, select **Style** = `Default`. Select **Show store logo** and **Show social icons** = `In newsletter`.
+Go to Page Builder, in **Theme Styles** > **Footer** > **Newsletter** section.
+
 Make sure **Show newsletter form** is selected. You can change the **Heading**, **background color**, **background image**, **button** and **text colors**.
 
 **Watch the instruction video:**
@@ -553,9 +554,9 @@ Right-click on the marker icon on the map and copy the longitude and latitude va
 
 ### Display custom footer links
 
-In **Page builder** > **Custom Widget** find **Footer links | PapaThemes Beautify** widget then drag and drop the widget to corresponding position in Footer.
+In **Page builder** > **Custom Widget** find **Footer links | PapaThemes Beautify** widget then drag and drop the widget to corresponding position in **Footer**.
 
-Select the **Column 1** and change **padding** to `0`
+Select the **Column 1** and change **padding** to `0 0 0 0`.
 
 In **design** you can type your link content and click on the **insert/edit link** button as picture below:
 
@@ -601,7 +602,7 @@ Mobile :
 
 Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
 
-Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shop for All Your Health & Wellness Needs"), select custom in **Text style** field, set **Font size** = `20px`, **Font size(Mobile)** = `18px`, **Font weight** = `Extra Bold`, **Text color** = `#0F49A0`, **Padding** = `10 0 40 0` and **Padding (Mobile)** = `18 0 18 0`.
+Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shop for All Your Health & Wellness Needs"), select `custom` in **Text style** field, set **Font size** = `20px`, **Font size(Mobile)** = `18px`, **Font weight** = `Extra Bold`, **Text color** = `#0F49A0`, **Padding** = `10 0 40 0` and **Padding (Mobile)** = `18 0 18 0`.
 
 Drag & drop **Callout Icons | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Delete all other callouts except the first one.
 
@@ -617,7 +618,7 @@ Select **Icon** = `Choose Image`, change the image to suit your needs in the **I
 
 Select `Custom` for the **Text style**. Set the **Font size** = `12px` for desktop devices. Adjust the **Font size(Mobile)** = `10px`. Customize the text content and choose your preferred **Text color**.
 
-Duplicate Icon-1 to create more similar icons. change the image and link of the icons just created.
+Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 ### Four Banner
 
 Desktop :
