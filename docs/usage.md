@@ -308,7 +308,7 @@ Paste the link into the designated **Link** box.
 
 Select `Custom` for the **Text style**. Set the **Font size** = `12px` for desktop devices. Adjust the **Font size(Mobile)** = `10px`. Customize the text content and choose your preferred **Text color**.
 
-Duplicate Icon-1 to create more similar icons. change the image and link of the icons just created.
+Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 
 ### Special products tabs
 
@@ -460,6 +460,7 @@ If you want to add more reviews, duplicate the first review as many times as nee
 To enable newsletter form, go to **Marketing** > **Email Marketing**, make sure **Allow Newsletter Subscriptions** is checked. Optionally select **Show Newsletter Summary** and enter the summary text as you want.
 
 Go to Page Builder, in **Theme Styles** > **Footer** > **Newsletter** section.
+
 Make sure **Show newsletter form** is selected. You can change the **Heading**, **background color**, **background image**, **button** and **text colors**.
 
 **Watch the instruction video:**
@@ -514,7 +515,7 @@ In **Page Builder** > **Theme Styles** > **Footer**, you can configure the newsl
 
 Drag and drop the **Layout widget** to the desired position. Set the **Column** = `1`.
 
-Select **Column 1** and set the **Padding** = `0 0 0 0`.
+Select Column 1 and set the **Padding** = `0 0 0 0`.
 
 Drag and drop the **HTML** widget into the Layout section.
 
