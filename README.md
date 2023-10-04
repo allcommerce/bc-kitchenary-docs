@@ -1,2 +1,2 @@
-# bc-Mooncat-docs
-Documentation for the Mooncat BigCommerce Theme by PapaThemes
+# bc-kitchenary-docs
+Documentation for the Kitchenary BigCommerce Theme by PapaThemes
