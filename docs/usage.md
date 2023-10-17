@@ -671,6 +671,71 @@ In **Settings** > **General**, set **Style for theme** = `Kansha Sport`, uncheck
 
 Duplicate **Banner 1** to 3 banners.
 
+## Setting Up Fashion Style Home Page
+
+### General 
+
+You can read these common instructions in **Setting Up Cooking Style Home Page** and **Setting Up Pharmacy Style Home Page** chapter:
+
+- [Header](#header)
+- [Top Banner](#top-banner)
+- [Ad Banner displays on all pages](#ad-banner-displays-on-all-pages)
+- [Main carousel](#main-carousel)
+- [Shopping Guide](#shop-guide)
+- [Top Categories](#top-categories)
+- [Featured brands](#featured-brands)
+- [Banner](#banner)
+- [Bestselling products](#bestselling-products)
+- [Four Banner](#four-banner)
+- [Featured products](#featured-products)
+- [New products](#new-products)
+- [Three Banners](#three-banners)
+- [Recently viewed products](#recently-viewed-products)
+- [Customer service](#customer-service)
+- [Recent blog posts](#recent-blog-posts)
+- [Customer reviews](#customer-reviews)
+- [Newsletter](#newsletter)
+- [Footer](#footer)
+- [Footer Map](#footer-map)
+- [Display custom footer links](#display-custom-footer-links)
+
+### Shop for All Your Health & Wellness Needs
+Desktop : 
+
+![Shop Health](img/shop-health-fashion.jpg)
+
+Mobile : 
+
+![Shop Health](img/shop-health-mobile--fashion.jpg)
+
+Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Shop for All Your Health & Wellness Needs"), **Padding** = `40 0 25 0` and **Padding (Mobile)** = `30 0 20 0`.
+
+Drag & drop **Flex Banners | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Delete all other callouts except the first one.
+
+To edit **Banner 1**, change your image, set **Image width** = `250px`, **Image height** = `250px`. **Image alt text** refers to modifying the caption of an image according to your preferences. **Border radius** = `8px`
+
+For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `12.5%`, **Tablet** = `25%` and **Mobile** = `30%`.
+
+In the **Padding** section, set the values for different devices as follows: **Desktop** = `15 15 15 15`, **Tablet** and **Mobile** = `8 8 8 8`.
+
+In **Settings** > **General** :
+
+Choose **Padding**, set value **Desktop** = `0 0 25 0` and **Tablet and Mobile** = `0 0 15 0` , checked **Display content overlaying banner on mobile**.
+
+Choose **Row wrap**, checked **Row no wrap on table** and **Row no wrap on mobile**.
+
+Duplicate **Banner 1** to create more similar icons. Change the image and link of the icons just created.
+
+![shop-healthy-config](img/shop-healthy-config.jpg)
+
+Select **Icon** = `Choose Image`, change the image to suit your needs in the **Icon Image**. Paste the link into the designated **Link** box.
+
+Select `Custom` for the **Text style**. Set the **Font size** = `12px` for desktop devices. Adjust the **Font size(Mobile)** = `10px`. Customize the text content and choose your preferred **Text color**.
+
+Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
+
 ## Customizing Products Display
 
 ### Product Card
