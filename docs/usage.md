@@ -700,6 +700,7 @@ You can read these common instructions in **Setting Up Cooking Style Home Page**
 - [Display custom footer links](#display-custom-footer-links)
 
 ### Shop for All Your Health & Wellness Needs
+
 Desktop : 
 
 ![Shop Health](img/shop-health-fashion.jpg)
@@ -1003,9 +1004,9 @@ In **Page Builder** > **Theme Styles** > **Products** > **Product Page** find **
 ![ask question](img/ask-question.jpg)
 
 
-### Nutrients & Directions
+### Instruction & size guide
 
-![Nutrients & Directions result](img/nutrients-directions-link.jpg)
+![Instruction & size guide](img/Instruction-size.jpg)
 
 To create additional information link:
 
@@ -1019,13 +1020,23 @@ In **Advanced Options** set **Sort Order** = `2`.
 
 To display the additional information link in the product detail page:
 
-In **Products**, select the product you want to display the link. Find **Custom Fields**, created new custom field. Set **Custom Fields Name** = `__guide_popup` and **Custom Fields Value** = `<your page name>|<Page URL>` (example: `Nutrients & Directions|/nutrients-directions/`) then save.
+In **Products**, select the product you want to display the link. Find **Custom Fields**, created new custom field. Set **Custom Fields Name** = `__guide_popup` and **Custom Fields Value** = `<your page name>|<Page URL>` (example: `Instruction|/instruction/`) then save.
 
-**Watch the instruction video:**
+### Below add to cart banner
 
-(wait a resource)
+To create **Below add to cart banner**, in **Page builder** drag and drop **Layout widget** to corresponding position.
 
+Select **Column 1**, set **Padding** = `0 0 0 0`.
 
+Drag and drop **Callout icon | PapaThemes Beautify widget** into column 1, delete all icons except callout icon 1.
+
+In **Styles** select `Left`, set **Padding** for all desktop, mobile and table = `0`.
+
+In **Icon** change to `Choose Image`, in **Icon image** select your desire image.
+
+To input your text into the widget, simply type it into the text field located in the design window.
+
+![Below add to cart banner](img/banner-below-add-to-cart.jpg)
 ### Video image product detail page
 
 In **Page Builder** > **Theme Styles** > **Products** > **Product Page** find **Show videos** select `tab` or `image gallery` to change display video position.
