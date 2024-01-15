@@ -146,12 +146,25 @@ Affer:
 
 ### Top Banner
 
-
 Go back to **Storefront** > **My Themes** > click **Customize** button beside the theme thumbnail. You can see the top banner appears above the header. To change the colors of the top banner, go to **Theme Styles** > **General** > **Top banners** section. Here you can change the text color and the background color.
 
 **Watch the instruction video:**
 
 <iframe width="760" height="515" src="https://www.youtube.com/embed/yvkQCvDx3Fc?si=WJek4U1BstkN2sFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+You can also create **top banner** by drag and drop **HTML widget** into corresponding position:
+
+![top-banner](img/top-banner.png)
+
+Enter your content inside `<p data-marquee></p>`.
+
+```html
+<p data-marquee>Get a discount with our limited time offer - Use code&nbsp;<strong>SAVE10</strong>&nbsp;for&nbsp;<strong>10%</strong>&nbsp;off your purchase!</p>
+<p data-marquee>Dive into our newest collection of eco-friendly products! Let's make a difference together.</p>
+<p data-marquee>Discover the beauty of handcrafted artisanal items in our latest collection. Every piece tells a story.</p>
+
+```
 
 ### Ad Banner displays on all pages
 
@@ -169,7 +182,7 @@ To display the ad banner appearing on all pages on the header, drag and drop the
 
 <iframe width="760" height="515" src="https://www.youtube.com/embed/X-0U2gh2S54?si=LuJfGRh2pjO7FSL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pictre-in-picture; web-share" allowfullscreen></iframe>
 
-### Main carousel
+### Main Carousel
 
 ![main-carousel-manager](img/main-carousel-manager.jpg)
 
@@ -181,7 +194,7 @@ Go back to **Page Builder**, in **Theme Styles** > **Home Page**, make sure **Ca
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796542010?h=3030ce28cf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-home carousel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-### Product by category
+### Product By Category
 
 ![Product by category](img/Product-by-category.jpg)
 
@@ -257,7 +270,7 @@ Save the changes and check the popup on the homepage.
 ![Shopping-guide-modal](img/Shopping-guide-modal.jpg)
 
 
-### Featured brands
+### Featured Brands
 
 ![Featured-brand](img/featured-brand.jpg)
 
@@ -310,7 +323,7 @@ Select `Custom` for the **Text style**. Set the **Font size** = `12px` for deskt
 
 Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
 
-### Special products tabs
+### Special Products Tabs
 
 ![special-products-tabs](img/special-products-tabs.jpg)
 
@@ -318,7 +331,7 @@ You can configure special products tabs section settings in **Page Builder** > *
 
 In **New / Featured / Bestselling Tabs** section, Change **Number of products** = `5` and **Number of products load more on viewport** = `0`. You can change **Default tab** to `Featured`, `Bestselling` or `New`. **Display type** can be changed to `Carousel` or `Grid`. **Show more button**, **featured products**, **bestselling products**, **new products**, **categories** can be enabled by checked box.
 
-### Featured products
+### Featured Products
 
 ![featured-products](img/Feature-products.jpg)
 
@@ -326,38 +339,39 @@ You can set featured products in **Products**, click the **star** icon on the sa
 
 Go back to **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `featured_products`. In **Featured products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
-### Four Cooking banners
+### Grid layout banners
 
 ![four-cooking-banners](img/four-cooking-banners.jpg)
 
-To create **Four Cooking banners** :
+To create **grid layout banners** :
 
 In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`, set **Padding** = `0 0 0 0`.
 
-Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**.
+Drag and drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**. Click on **Setting** > **Style for theme** select `kitchenary` Then delete all Flex Banners except the first one.
 
-To edit **Banner 1**, change your image, set **Image width** = `1200px`, **Image height** = `760px`. Show different image on mobile and upload your image, set **Image width (Mobile)** = `800px`, **Image height (Mobile)** = `700px`, **Border radius** = `4px`.
+![Flex-banner-setting](img/flex-setting.png)
 
-In **Content** > set **Content Align** follow **vertical** = `bottom`, **Content padding** and **Content padding (Tablet)** = `0 20 15 20`, **Content padding (Mobile)** = `0 15 10 15`.
+To edit **Banner 1**, change your image, set **Image width** = `1200px`, **Image height** = `600px`. If you want to display different image on mobile check on Show different image on mobile and upload your image and adjust image size.
 
-In **Content** > **Heading text** set **Text style** = `Custom`, **Font Weight** = `Bold`, **Font size** = `16px`, **Font size(Mobile)** = `14px`, **Text color** = `#FFFFFF`.
+In **Content** > set **Content Align** follow **vertical** = `bottom`, **Content padding** and **Content padding (Tablet)** = `15 20 15 20`, **Content padding (Mobile)** = `15 15 15 15`. Change **Content background color to** `#000000` and hide **Heading content**.
 
-In **Content** > activate the **Description text**, set **Font weight** = `Normal`, **Font size** = `16px`, **Font size (Mobile)** = `14px`, **Text color** = `#FFFFFF`
+In **Content** > activate the **Description text**, set **Font weight** = `Normal`, **Text color** = `#FFFFFF`
 
 In **Content** > activate the **Action button**, set **Position** = `Right`.
 
-In **General** > **Width** panel choose **Width** = `%`, set **Value (Desktop)** = `50%`, **Value (Tablet)** and **Value (Mobile)** = `100%`.
+In **General** > **Width** panel choose **Width** = `%`, set **Value (Desktop)** and **Value (Tablet)** = `50%`, **Value (Mobile)** = `100%`.
 
-In **General** > **Padding**, set **Desktop** = `0 15 30 0`, **Tablet** = `0 0 20 0` and **Mobile** = `0 0 15 0`.
+In **General** > **Padding**, set **Desktop** = `15 15 15 15`, **Tablet** = `8 8 8 8` and **Mobile** = `8 0 8 0`.
 
 Duplicate to 4 banners and upload images according to each banner.
-### New products
+
+### New Products
 
 ![new-products](img/New-products.jpg)
 
 You can configure new products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `new_products` . In **New products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
-### Bestselling products
+### Bestselling Products
 
 ![bestselling-products](img/Popular-product.jpg)
 
@@ -388,6 +402,21 @@ In **Text**, set **Font Size** = `16px`, **Font weight** = `Medium`, **Text colo
 In **Button**, set **Button color** = `#FB9A43`
 
 In **Advanced**, choose **style for theme** = `Kitchenary`.
+
+### Categories Banner
+
+![category-banner](img/Categories-Banner.png)
+
+Drag & drop **Layout widget** to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
+
+Drag & drop **Flex banners|papathemes beautify** to column 1 and delete all banner except the first one.
+
+Insert your banner image with size `1092x135`, change **image width** = `1092`and **image height** = `135`
+
+Set **border radius** = `4px` 
+
+in content, disable `heading text`
+
 ### Recently Viewed Products
 
 ![bestselling-products](img/Recently-viewed-products.jpg)
@@ -396,7 +425,7 @@ Recently Viewed Products will be display automatically viewed any product.
 
 You can configure recently viewed products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** has typed `recentviewed`. In **Recently Viewed Products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
 
-### Customer service
+### Customer Service
 
 ![customer-service](img/customer-service.jpg)
 
@@ -416,7 +445,7 @@ To change Background of button, go to **General** find **General colors** change
 
 To change **Text**, **Icon**, color go to **General** find **Links colors** change **Default** to your color.
 
-### Recent blog posts
+### Recent Blog Posts
 
 ![edit-recent-blog](img/edit-recent-blog.jpg)
 
@@ -432,8 +461,6 @@ Drag & drop **Layout** widget to the corresponding position, change **Column** =
 
 Drag & drop **Section Heading | PapaThemes Beautify** widget into the **Layout**. Typing your text (example "Our Customer Reviews"), select `custom` in **Text style** field, set **Font size** = `20px`, **Text color** = `#000000`, **Margin** = `36 0 16 0`, **Margin (Mobile)** = `18 0 0 0`.
 
-![customer-reviews-heading](img/customer-reviews-heading.png)
-
 Drag & drop **Customer Reviews | PapaThemes Beautify** widget below **Section Heading | PapaThemes Beautify** widget. Make sure to remove all reviews except for the first one.
 
 For each review, provide the following details:
@@ -447,8 +474,6 @@ For each review, provide the following details:
 **Author**: Specify the name of the reviewer.
 
 To maintain consistency in the theme, select `Beautify Furniture` in the **Style for theme** option.
-
-![customer-reviews-edit](img/customer-reviews-edit.png)
 
 If you want to add more reviews, duplicate the first review as many times as needed and update the content for each review.
 
@@ -467,6 +492,18 @@ Make sure **Show newsletter form** is selected. You can change the **Heading**, 
 
 <iframe width="760" height="515" src="https://www.youtube.com/embed/5HxXt7uaX5c?si=QjmxVqePqgfLxxm6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+### Newsletter Popup
+
+![newsletter-popup](img/newletter-popup.jpg)
+
+**Newsletter Popup**use the same content and heading with **Newsletter** in footer. Please find instruction to change content in **Newsletter**.
+
+To change delay time and show up again peropd for display **Newsletter Popup**, in **Theme styles** > **General** > **Newsletter Popup** change **Show after page loaded (sec)** for delay time to display the popup, change **Don't show up again (sec)** for the popup re-appear again.
+
+To change image in **Newsletter popup**, simply copy and paste your Image URL to **Newsletter Popup background URL**
+
+![edit-newsletter-popup](img/newletter-popup-edit.png)
+
 ### Benefit
 
 Desktop :
@@ -479,19 +516,19 @@ In **Page Builder**, drag & drop **Layout** widget to the corresponding position
 
 Drag and drop **Callout Icons | PapaThemes Beautify** widget into **Column 1**. Delete all other callouts except the first one.
 
-Choose the `Large` option in the Icon section.
+Choose the `Large` option in the Icon section. 
 
 For the **Width**, select the unit `%` and specify the values for different devices as follows: **Desktop** = `16,5%`, **Tablet** = `33,33%`, **Mobile** = `50%`.
 
 In the **Padding** section, set the values for different devices as follows: **Desktop** = `45 5 45 5`, **Tablet** and **Mobile** = `20 5 20 5`.
 
-Select your desired icon in the **Icon** section.
+Select your desired icon in the **Icon** section, then change **icon color** follow your design.
 
-In **Show text**, set **font weight** = `Semi Bold(Demi Bold)`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#FFFFFF` and **text color (hover)** = `#74B3EA`.
+In **Show text**, **Text style** choose `Custom` then set **text color** = `#000000` and **text color (hover)** = `#FF7700 `.
 
-Checked **Show second text**, set **font weight** = `Normal`, **font size** and **font size (Mobile)** = `14px`, **text color** = `#B8C5D8` and **text color (hover)** = `#74B3EA`
+Enable **Show second text**, **Text style** choose `Custom` then set **text color** = `#000000` and **text color (hover)** = `#FF7700`
 
-Duplicate Icon-1 to create more similar icons. Change the image and link of the icons just created.
+Duplicate Icon-1 to 6 icon. Change the image and link for each duplicated icon.
 
 ### Footer
 
@@ -552,7 +589,29 @@ Right-click on the marker icon on the map and copy the longitude and latitude va
 
 ![gmap-lat-lng](img/gmap-lat-lng.jpg)
 
-### Display custom footer links
+### Instagram photos
+
+To display your Instagram photos, open <https://instagram.papathemes.com/> Follow the instruction on this page to [Connect your Facebook Page with your Instagram account](https://www.facebook.com/business/help/898752960195806). Then click **Login With Facebook** button and follow the further steps to authorize access permission. Click **Show Embedding Code** button to generate the code embedding to your web store. Choose **Preset** = `Carousel` and select **LazyLoad**.
+
+Copy all the code appear in Step 1 & Step 2. For example:
+
+```html
+<script>!function(){var a=document.createElement("script");a.defer=!0,a.src="https://papathemes.s3.amazonaws.com/instagramapp/assets/js/embed-1.0.1.js",a.onload=function(){PapathemesInstagramApp.init({account_id:"****************",element_id:"papainstagram-render",limit:"20",preset:"grid",lazyload:"false"})},document.body.appendChild(a)}();</script>
+
+<div id="papainstagram-render"></div>
+```
+
+Go back to your store Page Builder. Drag & drop the HTML widget to the corresponding position. Paste the generated code above to the HTML editor, and click **Save HTML** button. Your Instagram photos should display like our demo store.
+
+Please note that the app only updates your latest uploaded photos every 6 hours.
+
+To create the title, drag & drop the **Section Heading** widget to above the Instagram photos. Set **Padding** = `40 0 40 0` and **Padding (Mobile)** = `20 0 20 0`.
+
+**Watch the instruction video:**
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795504772?h=06cb1784a7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="instr-instagram"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+### Display Custom Footer Links
 
 In **Page builder** > **Custom Widget** find **Footer links | PapaThemes Beautify** widget then drag and drop the widget to corresponding position in **Footer**.
 
