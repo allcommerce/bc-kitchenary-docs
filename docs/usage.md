@@ -1284,5 +1284,30 @@ Watch the instruction video:
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796915050?h=fa4bc20f8c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Instr-Brand description"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
+## Customizing Cart page
+
+### Display free shipping message in cart page.
+
+Not qualify message
+
+![Not-qualify](\img\not-egilible.jpg)
+
+Qualify message
+
+![qualify](\img\promotion-qualify.jpg)
+
+In **Marketing** > **Promotion** click on **create** and select **With legacy editor**
+
+In **Promotion detail** name your promotion 
+
+In **promotion type** select `Orders totaling more than X amount get free shipping to specific shipping zones` at the field **spend at least** type your amount
+
+![free-shipping-editor](\img\free-shipping.jpg)
+
+In **Promotion option** type your message at **Congratulations Banner Message** to display for cart have qualified and type your message for cart have not qualify at **Upsell Banner Message** with format `[your text] %%condition.remaining%% [your text]` then click save
+
+![promotion-message](\img\Promotion-message.jpg)
+
+
 
 
