@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.1.1 (02-29-2024)
+- Display social icon horizontal layout when turn off google map ISSUE-#257 (PR-#258)
+- Fix close button on marketing banner #259 (#260)
+- Fix color and font weight of price of product card in category page #260 (#261)
+- Add config to show/hide customer services in the footer of sub-pages #262 (#263)
+
 ## 1.1.0 (01-26-2024)
 - remove unused widget heading alignment (#240)
 - Fix arrow button on product carousel section #241 (#242)
