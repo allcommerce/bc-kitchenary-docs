@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.1.2 (03-15-2024)
+- Fix out of stock product still display Add to Cart button on PDP
+- Fix footer categories limit affect to the main menu #256 (#266)
+
 ## 1.1.1 (02-29-2024)
 - Display social icon horizontal layout when turn off google map ISSUE-#257 (PR-#258)
 - Fix close button on marketing banner #259 (#260)
