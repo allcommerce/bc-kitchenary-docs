@@ -858,54 +858,54 @@ Duplicate **Banner 1** to create more similar icons. Change the image and link o
 
 ![special-customfields](img/special-customfields.jpg)
 
-
-**Special custom fields in product info:**
-
+#### Setup Special custom fields in product info:
 ![special-customfields-info](img/special-customfields-info.jpg)
 
-To add custom fields, go to the **Product Editor**. These special custom fields need to be name correctly to be displayed.
+To add custom fields, go to the **Product Editor**. Find **Custom Fields**, created new custom field. These special custom fields need to be name correctly to be displayed.
 
 The custom fields with specified **Custom Fields Name** are:
 
 `version`
 `item type`
 `promo`
-`region`
 
-Please note that for the **Custom Fields Name** `region`, the **Custom Fields Value** should be in the format of Country Codes, written as (Country Codes|Country Codes...).
+For example:
+![special-customfields-info-add](img/special-customfields-info-add.jpg)
+
+#### Setup Special product info - Region/Popup
+![special-customfields-info-region](img/special-customfields-info-region.jpg)
+
+The **Custom Fields Name** `region`, the **Custom Fields Value** should be in the format of Country Codes, written as (Country Codes|Country Codes...).
 
 For example: `(VN|US|BZ|CN)`.
-
-![special-customfields-info-region](img/special-customfields-info-region.jpg)
 
 
 You can create more than one `region` custom field and add additional Country Codes values.
 
-![special-customfields-info-add](img/special-customfields-info-add.jpg)
+![special-customfields-info-region-add](img/special-customfields-info-region-add.jpg)
 
-**Special custom fields below product images:**
-
+#### Setup product summary
 ![special-customfields-summary](img/special-customfields-summary.jpg)
-
-To add custom fields, access the product editor. These special custom fields need to be named correctly to be displayed.
+To add custom fields, go to the **Product Editor**. Find **Custom Fields**, created new custom field. These special custom fields need to be name correctly to be displayed.
 
 The custom fields with specified **Custom Fields Name** are:
 
-`Platform`
-`Activation Label`
-`Activation Link`
 `Developer`
 `Release Date`
 `Publisher`
 `Type`
 `Delivery`
-`Language`
 
-For the **Platform** section, it is constructed from 3 custom fields: `platform`, `activation label`, `activation link`.
+For example:
+![special-customfields-summary-add](img/special-customfields-summary-add.jpg)
 
+
+#### Setup - Platform
 ![special-customfields-summary-platform](img/special-customfields-summary-platform.jpg)
 
-**Platform Custom Fields Value** corresponds to the name of the games platform. The **Logo** of the platform will display correctly when you set **Custom Fields Value** according to the configuration names specified below:
+For the **Platform** section, it is constructed from 3 **Custom Fields Name**: `platform`, `activation label`, `activation link`.
+
+The `platform` corresponds to the name of the games platform. The **Logo** of the platform will display correctly when you set **Custom Fields Value** according to the configuration names specified below:
 
 `battle.net`
 `ea`
@@ -923,25 +923,22 @@ For the **Platform** section, it is constructed from 3 custom fields: `platform`
 `xbox-live`
 `other`
 
-For example:
-
-**Custom Field Name**: `Platform`, **Custom Fields Value**: `Steam`
-
-
 The `activation label` in the illustration above is **Activation Guide**, and the `activation link` is the browser path when clicked on the `activation label`.
 
 For example:
 
-**Custom Field Name**: `activation label`, **Custom Fields Value**: `Activation guide`
+![special-customfields-summary-platform-add](img/special-customfields-summary-platform-add.jpg)
 
-**Custom Field Name**: `activation link`, **Custom Fields Value**: `/grand-theft-auto-v/`
+#### Setup - Language
+![special-customfields-summary-language](img/special-customfields-summary-language.jpg)
 
-Please note that for the **Custom Fields Name** 'language', the **Custom Fields Value** should be in the format of Country Codes, written as (Country Codes|Country Codes...).
+The **Custom Fields Name** 'language', the **Custom Fields Value** should be in the format of Country Codes, written as (Country Codes|Country Codes...).
 
 For example: `(US|KR|BR)`.
 
 You can create more than one 'language' custom field and add additional Country Codes values.
 
+![special-customfields-summary-language-add](img/special-customfields-summary-language-add.jpg)
 
 ## Customizing Products Display
 
