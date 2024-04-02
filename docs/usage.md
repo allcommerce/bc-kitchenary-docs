@@ -854,6 +854,95 @@ Choose **Row wrap**, checked **Row no wrap on table** and **Row no wrap on mobil
 
 Duplicate **Banner 1** to create more similar icons. Change the image and link of the icons just created.
 
+### Special Custom Fields
+
+![special-customfields](img/special-customfields.jpg)
+
+
+**Special custom fields in product info:**
+
+![special-customfields-info](img/special-customfields-info.jpg)
+
+To add custom fields, go to the **Product Editor**. These special custom fields need to be name correctly to be displayed.
+
+The custom fields with specified **Custom Fields Name** are:
+
+`version`
+`item type`
+`promo`
+`region`
+
+Please note that for the **Custom Fields Name** `region`, the **Custom Fields Value** should be in the format of Country Codes, written as (Country Codes|Country Codes...).
+
+For example: `(VN|US|BZ|CN)`.
+
+![special-customfields-info-region](img/special-customfields-info-region.jpg)
+
+
+You can create more than one `region` custom field and add additional Country Codes values.
+
+![special-customfields-info-add](img/special-customfields-info-add.jpg)
+
+**Special custom fields below product images:**
+
+![special-customfields-summary](img/special-customfields-summary.jpg)
+
+To add custom fields, access the product editor. These special custom fields need to be named correctly to be displayed.
+
+The custom fields with specified **Custom Fields Name** are:
+
+`Platform`
+`Activation Label`
+`Activation Link`
+`Developer`
+`Release Date`
+`Publisher`
+`Type`
+`Delivery`
+`Language`
+
+For the **Platform** section, it is constructed from 3 custom fields: `platform`, `activation label`, `activation link`.
+
+![special-customfields-summary-platform](img/special-customfields-summary-platform.jpg)
+
+**Platform Custom Fields Value** corresponds to the name of the games platform. The **Logo** of the platform will display correctly when you set **Custom Fields Value** according to the configuration names specified below:
+
+`battle.net`
+`ea`
+`epic games`
+`gog.com`
+`green gift`
+`nintendo`
+`origin`
+`pc`
+`play station`
+`rock star`
+`steam`
+`ubisoft connect`
+`windows`
+`xbox-live`
+`other`
+
+For example:
+
+**Custom Field Name**: `Platform`, **Custom Fields Value**: `Steam`
+
+
+The `activation label` in the illustration above is **Activation Guide**, and the `activation link` is the browser path when clicked on the `activation label`.
+
+For example:
+
+**Custom Field Name**: `activation label`, **Custom Fields Value**: `Activation guide`
+
+**Custom Field Name**: `activation link`, **Custom Fields Value**: `/grand-theft-auto-v/`
+
+Please note that for the **Custom Fields Name** 'language', the **Custom Fields Value** should be in the format of Country Codes, written as (Country Codes|Country Codes...).
+
+For example: `(US|KR|BR)`.
+
+You can create more than one 'language' custom field and add additional Country Codes values.
+
+
 ## Customizing Products Display
 
 ### Product Card
