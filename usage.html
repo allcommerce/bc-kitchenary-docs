@@ -168,6 +168,20 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#browse-our-gaming-selections">Browse Our Gaming Selections</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#special-game-information-display">Special game information display</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#setup-game-version-in-product-detail">Setup game version in product detail</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setup-regionpopup-restriction">Setup Region/Popup restriction</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setup-product-summary">Setup product summary</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setup-platform">Setup - Platform</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#setup-language">Setup - Language</a>
+    </li>
+        </ul>
+    </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#customizing-products-display">Customizing Products Display</a>
@@ -839,6 +853,64 @@ Right-click on the marker icon on the map and copy the longitude and latitude va
 <p>In <strong>Settings</strong> &gt; <strong>General</strong> :</p>
 <p>Choose <strong>Row wrap</strong>, checked <strong>Row no wrap on table</strong> and <strong>Row no wrap on mobile</strong>.</p>
 <p>Duplicate <strong>Banner 1</strong> to create more similar icons. Change the image and link of the icons just created.</p>
+<h3 id="special-game-information-display">Special game information display<a class="headerlink" href="#special-game-information-display" title="Permanent link">&para;</a></h3>
+<p><img alt="special-customfields" src="img/special-customfields.jpg" /></p>
+<h4 id="setup-game-version-in-product-detail">Setup game version in product detail<a class="headerlink" href="#setup-game-version-in-product-detail" title="Permanent link">&para;</a></h4>
+<p><img alt="special-customfields-info" src="img/special-customfields-info.jpg" /></p>
+<p>To add custom fields, go to the <strong>Product Editor</strong>. Find <strong>Custom Fields</strong>, created new custom field. These special custom fields need to be name correctly to be displayed.</p>
+<p>The custom fields with specified <strong>Custom Fields Name</strong> are:</p>
+<p><code>version</code>
+<code>item type</code>
+<code>promo</code></p>
+<p>For example:</p>
+<p><img alt="special-customfields-info-add" src="img/special-customfields-info-add.jpg" /></p>
+<h4 id="setup-regionpopup-restriction">Setup Region/Popup restriction<a class="headerlink" href="#setup-regionpopup-restriction" title="Permanent link">&para;</a></h4>
+<p><img alt="special-customfields-info-region" src="img/special-customfields-info-region.jpg" /></p>
+<p>The <strong>Custom Fields Name</strong> <code>region</code>, the <strong>Custom Fields Value</strong> should be in the format of Country Codes, written as (Country Codes|Country Codes...).</p>
+<p>For example: <code>(VN|US|BZ|CN)</code>.</p>
+<p>You can create more than one <code>region</code> custom field and add additional Country Codes values.</p>
+<p><img alt="special-customfields-info-region-add" src="img/special-customfields-info-region-add.jpg" /></p>
+<p>Note: you only need two or more custom fields <code>region</code> when the first <strong>custom field value</strong> have reach word limit.</p>
+<h4 id="setup-product-summary">Setup product summary<a class="headerlink" href="#setup-product-summary" title="Permanent link">&para;</a></h4>
+<p><img alt="special-customfields-summary" src="img/special-customfields-summary.jpg" /></p>
+<p>To add custom fields, go to the <strong>Product Editor</strong>. Find <strong>Custom Fields</strong>, created new custom field. These special custom fields need to be name correctly to be displayed.</p>
+<p>The custom fields with specified <strong>Custom Fields Name</strong> are:</p>
+<p><code>Developer</code>
+<code>Release Date</code>
+<code>Publisher</code>
+<code>Type</code>
+<code>Delivery</code></p>
+<p>For example:</p>
+<p><img alt="special-customfields-summary-add" src="img/special-customfields-summary-add.jpg" /></p>
+<h4 id="setup-platform">Setup - Platform<a class="headerlink" href="#setup-platform" title="Permanent link">&para;</a></h4>
+<p><img alt="special-customfields-summary-platform" src="img/special-customfields-summary-platform.jpg" /></p>
+<p>For the <strong>Platform</strong> section, it is constructed from 3 <strong>Custom Fields Name</strong>: <code>platform</code>, <code>activation label</code>, <code>activation link</code>.</p>
+<p>The <code>platform</code> corresponds to the name of the games platform. The <strong>Logo</strong> of the platform will display correctly when you set <strong>Custom Fields Value</strong> according to the configuration names specified below:</p>
+<p><code>battle.net</code>
+<code>ea</code>
+<code>epic games</code>
+<code>gog.com</code>
+<code>green gift</code>
+<code>nintendo</code>
+<code>origin</code>
+<code>pc</code>
+<code>play station</code>
+<code>rock star</code>
+<code>steam</code>
+<code>ubisoft connect</code>
+<code>windows</code>
+<code>xbox-live</code>
+<code>other</code></p>
+<p>The <code>activation label</code> in the illustration above is <strong>Activation Guide</strong>, and the <code>activation link</code> is the browser path when clicked on the <code>activation label</code>.</p>
+<p>For example:</p>
+<p><img alt="special-customfields-summary-platform-add" src="img/special-customfields-summary-platform-add.jpg" /></p>
+<h4 id="setup-language">Setup - Language<a class="headerlink" href="#setup-language" title="Permanent link">&para;</a></h4>
+<p><img alt="special-customfields-summary-language" src="img/special-customfields-summary-language.jpg" /></p>
+<p>The <strong>Custom Fields Name</strong> 'language', the <strong>Custom Fields Value</strong> should be in the format of Country Codes, written as (Country Codes|Country Codes...).</p>
+<p>For example: <code>(US|KR|BR)</code>.</p>
+<p>You can create more than one = <code>language</code> custom field and add additional Country Codes values.</p>
+<p><img alt="special-customfields-summary-language-add" src="img/special-customfields-summary-language-add.jpg" /></p>
+<p>Note: you only need two or more custom fields <code>language</code> when the first custom field value have reach word limit.</p>
 <h2 id="customizing-products-display">Customizing Products Display<a class="headerlink" href="#customizing-products-display" title="Permanent link">&para;</a></h2>
 <h3 id="product-card">Product Card<a class="headerlink" href="#product-card" title="Permanent link">&para;</a></h3>
 <p><img alt="configure-product-card" src="img/configure-product-card.jpg" /></p>
