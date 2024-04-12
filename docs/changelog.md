@@ -1,5 +1,13 @@
 # Release Notes
 
+## 1.2.0 (04-12-2024)
+- Release new Game style.
+- Remove unused files
+- Fix jstree color
+- Fix badge sale countdown label #268 (#269)
+- Do not hide sale badge on hover card
+- Fix show/hide rrp in alsobought product follow theme settings #273 (#274)
+
 ## 1.1.2 (03-15-2024)
 - Fix out of stock product still display Add to Cart button on PDP
 - Fix footer categories limit affect to the main menu #256 (#266)
