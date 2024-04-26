@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.2.2 (04-26-2024)
+- Fix infinite loading not working when there are 2 filter values selected or select the default sort again
+
+## 1.2.1 (04-18-2024)
+- Support html content in the homepage carousel
+
 ## 1.2.0 (04-12-2024)
 - Release new Game style.
 - Remove unused files
