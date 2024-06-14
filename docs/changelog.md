@@ -1,5 +1,14 @@
 # Release Notes
 
+## 1.2.3 (06-14-2024)
+- Fix background modal using container fill color (#284)
+- Update MoonCat 1.7.4:
+  - Fix webfont cannot load Google font with multiple weights
+  - Fix NaN of quantity box on product cards
+  - Fix default image not showing in search result page for product don't have image thumbnail
+  - Fix widget layout not center
+  - Fix sort not working at search result page when turn off faceted filter
+
 ## 1.2.2 (04-26-2024)
 - Fix infinite loading not working when there are 2 filter values selected or select the default sort again
 
