@@ -1,5 +1,17 @@
 # Release Notes
 
+## 1.3.1 (07-05-2024)
+- Fix scroll to top when using pagination on category page.
+- Improve og:image tag for home page, category, brand page, blog page. Use store logo as a fallback for pages without og:image.
+
+## 1.3.0 (06-28-2024)
+- Hide sidebar on category & brand page when it is empty
+- Fix account link missing when signed in
+- Fix paginator numbers not working on orders listing page
+- Allow unselect option of swatch, rectangle, radio
+- Fix sub menu item color not visible on mobile when having only 2-level categories
+- Remove background color of the category images
+
 ## 1.2.3 (06-14-2024)
 - Fix background modal using container fill color (#284)
 - Update MoonCat 1.7.4:
