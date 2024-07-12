@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.3.2 (07-12-2024)
+- Correct og:image meta tag, hide images on menu to avoid wrong image detect from social platforms
+
 ## 1.3.1 (07-05-2024)
 - Fix scroll to top when using pagination on category page.
 - Improve og:image tag for home page, category, brand page, blog page. Use store logo as a fallback for pages without og:image.
