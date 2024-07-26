@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.3.3 (07-26-2024)
+- Change Twitter icon to X
+- Fix Minimum Quantity Purchase & Maximum Quantity Purchase not working on product cards
+
 ## 1.3.2 (07-12-2024)
 - Correct og:image meta tag, hide images on menu to avoid wrong image detect from social platforms
 
