@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.3.4 (08-23-2024)
+- Add data-swatches="{{attributeName}}" to product card swatches
+- Fix missing loading animation when click on subcategories
+
 ## 1.3.3 (07-26-2024)
 - Change Twitter icon to X
 - Fix Minimum Quantity Purchase & Maximum Quantity Purchase not working on product cards
