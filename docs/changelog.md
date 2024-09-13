@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.4.0 (09-13-2024)
+- Fix Quick Search Overlay Issue on Desktop and Menu Display Issue on Mobile When Sticky Header is disabled #299
+- Fix whatsapp link #293 (#294)
+- Fix top categories on the homepage when no image (#298)
+- Update source code from MoonCat 1.8.
+
 ## 1.3.4 (08-23-2024)
 - Add data-swatches="{{attributeName}}" to product card swatches
 - Fix missing loading animation when click on subcategories
