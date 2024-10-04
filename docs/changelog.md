@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.4.1 (10-04-2024)
+- Add option to limit maximum recently viewed products
+- delete PayPal test button in data-add-to-cart-wallet-buttons
+
 ## 1.4.0 (09-13-2024)
 - Fix Quick Search Overlay Issue on Desktop and Menu Display Issue on Mobile When Sticky Header is disabled #299
 - Fix whatsapp link #293 (#294)
