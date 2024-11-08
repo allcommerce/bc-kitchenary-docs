@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.4.2 (11-08-2024)
+- Fix homepage carousel content overflow on Safari
+- Fix undefined 'input-font-color' in add payment methods account page
+
 ## 1.4.1 (10-04-2024)
 - Add option to limit maximum recently viewed products
 - delete PayPal test button in data-add-to-cart-wallet-buttons
