@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.6.1 (07-18-2025)
+- Add passwordless login translations for multiple languages
+
 ## 1.6.0 (07-18-2025)
 - [CORNERTSONE] PAYPAL-5000 Quick pay buttons are seen on PDP before 'required' option selection (#319)
 - [CORNERTSONE] Update to support multiple date fields and remove blank space (#320)
