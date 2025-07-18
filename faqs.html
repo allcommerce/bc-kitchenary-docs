@@ -69,6 +69,48 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#display-mega-menu-with-4-columns">Display mega menu with 4 columns</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#youtube-video-customization-guide-for-bigcommerce-theme">YouTube Video Customization Guide for BigCommerce Theme</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-youtube-parameters">Required YouTube Parameters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#files-to-edit">Files to Edit</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-templates-html">1. Templates HTML</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-javascript-files">2. JavaScript Files</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementation-steps">Implementation Steps</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#step-1-backup-files">Step 1: Backup files</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-2-make-the-changes">Step 2: Make the changes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-3-test-changes">Step 3: Test changes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#step-4-deploy">Step 4: Deploy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#results-verification">Results Verification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#issue-videos-still-show-title">Issue: Videos still show title</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#issue-videos-wont-play">Issue: Videos won't play</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#issue-changes-dont-take-effect">Issue: Changes don't take effect</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -150,6 +192,152 @@ style.innerHTML = '@media (min-width: 801px) {'
 })();
 &lt;/script&gt;
 </code></pre>
+<h2 id="youtube-video-customization-guide-for-bigcommerce-theme">YouTube Video Customization Guide for BigCommerce Theme<a class="headerlink" href="#youtube-video-customization-guide-for-bigcommerce-theme" title="Permanent link">&para;</a></h2>
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
+<p>This document provides instructions on how to hide video titles and suggested videos in YouTube video embeds for the BigCommerce Kitchenary theme.</p>
+<h3 id="required-youtube-parameters">Required YouTube Parameters<a class="headerlink" href="#required-youtube-parameters" title="Permanent link">&para;</a></h3>
+<p>To hide titles and suggested videos, add the following parameters to YouTube URLs:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rel</code></td>
+<td>0</td>
+<td>Hide suggested videos when video ends</td>
+</tr>
+<tr>
+<td><code>showinfo</code></td>
+<td>0</td>
+<td>Hide video title and information</td>
+</tr>
+<tr>
+<td><code>modestbranding</code></td>
+<td>1</td>
+<td>Hide YouTube logo</td>
+</tr>
+<tr>
+<td><code>iv_load_policy</code></td>
+<td>3</td>
+<td>Hide annotations/captions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="files-to-edit">Files to Edit<a class="headerlink" href="#files-to-edit" title="Permanent link">&para;</a></h3>
+<h4 id="1-templates-html">1. Templates HTML<a class="headerlink" href="#1-templates-html" title="Permanent link">&para;</a></h4>
+<h5 id="file-templatescomponentsproductsproduct-viewhtml">File: <code>templates/components/products/product-view.html</code><a class="headerlink" href="#file-templatescomponentsproductsproduct-viewhtml" title="Permanent link">&para;</a></h5>
+<p><strong>Location 1 - Main video embed (line ~987):</strong></p>
+<pre><code class="language-html">&lt;!-- BEFORE --&gt;
+src=&quot;//www.youtube.com/embed/{{product.videos.featured.id}}?rel=0&quot;
+
+&lt;!-- AFTER --&gt;
+src=&quot;//www.youtube.com/embed/{{product.videos.featured.id}}?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&quot;
+</code></pre>
+<p><strong>Location 2 - Image gallery videos (line ~196):</strong></p>
+<pre><code class="language-html">&lt;!-- BEFORE --&gt;
+data-video-url=&quot;//www.youtube.com/embed/{{id}}?autoplay=1&amp;mute=1&amp;enablejsapi=1&quot;
+
+&lt;!-- AFTER --&gt;
+data-video-url=&quot;//www.youtube.com/embed/{{id}}?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&quot;
+</code></pre>
+<p><strong>Location 3 - Navigation thumbnails (line ~315):</strong></p>
+<pre><code class="language-html">&lt;!-- BEFORE --&gt;
+data-video-url=&quot;//www.youtube.com/embed/{{id}}?autoplay=1&amp;mute=1&amp;enablejsapi=1&quot;
+
+&lt;!-- AFTER --&gt;
+data-video-url=&quot;//www.youtube.com/embed/{{id}}?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&quot;
+</code></pre>
+<h5 id="file-templatescomponentsproductsproduct-view-gamehtml">File: <code>templates/components/products/product-view-game.html</code><a class="headerlink" href="#file-templatescomponentsproductsproduct-view-gamehtml" title="Permanent link">&para;</a></h5>
+<p>Similar to <code>product-view.html</code>, need to update these locations:
+- Main video embed (line ~1037)
+- Image gallery videos (line ~196)
+- Navigation thumbnails (line ~315)</p>
+<h5 id="file-templatescomponentsproductsvideoshtml">File: <code>templates/components/products/videos.html</code><a class="headerlink" href="#file-templatescomponentsproductsvideoshtml" title="Permanent link">&para;</a></h5>
+<p><strong>Location - Featured video (line ~23):</strong></p>
+<pre><code class="language-html">&lt;!-- BEFORE --&gt;
+src=&quot;https://www.youtube.com/embed/{{this.featured.id}}?rel=0&quot;
+
+&lt;!-- AFTER --&gt;
+src=&quot;https://www.youtube.com/embed/{{this.featured.id}}?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3&quot;
+</code></pre>
+<h4 id="2-javascript-files">2. JavaScript Files<a class="headerlink" href="#2-javascript-files" title="Permanent link">&para;</a></h4>
+<h5 id="file-assetsjsthemeproductvideo-galleryjs">File: <code>assets/js/theme/product/video-gallery.js</code><a class="headerlink" href="#file-assetsjsthemeproductvideo-galleryjs" title="Permanent link">&para;</a></h5>
+<p><strong>Location - setMainVideo method (line ~23):</strong></p>
+<pre><code class="language-javascript">// BEFORE
+setMainVideo() {
+    this.$player.attr('src', `//www.youtube.com/embed/${this.currentVideo.id}`);
+}
+
+// AFTER
+setMainVideo() {
+    this.$player.attr('src', `//www.youtube.com/embed/${this.currentVideo.id}?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;iv_load_policy=3`);
+}
+</code></pre>
+<h5 id="file-assetsjspapathemesyoutube-carouseljs">File: <code>assets/js/papathemes/youtube-carousel.js</code><a class="headerlink" href="#file-assetsjspapathemesyoutube-carouseljs" title="Permanent link">&para;</a></h5>
+<p>This file already has the correct configuration in <code>playerVars</code>:</p>
+<pre><code class="language-javascript">playerVars: {
+    controls: 0,
+    disablekb: 1,
+    enablejsapi: 1,
+    fs: 0,
+    rel: 0,           // ✓ Already exists
+    showinfo: 0,      // ✓ Already exists
+    iv_load_policy: 3, // ✓ Already exists
+    modestbranding: 1, // ✓ Already exists
+    wmode: 'transparent',
+    playsinline: 1,
+}
+</code></pre>
+<h3 id="implementation-steps">Implementation Steps<a class="headerlink" href="#implementation-steps" title="Permanent link">&para;</a></h3>
+<h4 id="step-1-backup-files">Step 1: Backup files<a class="headerlink" href="#step-1-backup-files" title="Permanent link">&para;</a></h4>
+<pre><code class="language-bash"># Create backup before editing
+cp templates/components/products/product-view.html templates/components/products/product-view.html.backup
+cp templates/components/products/product-view-game.html templates/components/products/product-view-game.html.backup
+cp templates/components/products/videos.html templates/components/products/videos.html.backup
+cp assets/js/theme/product/video-gallery.js assets/js/theme/product/video-gallery.js.backup
+</code></pre>
+<h4 id="step-2-make-the-changes">Step 2: Make the changes<a class="headerlink" href="#step-2-make-the-changes" title="Permanent link">&para;</a></h4>
+<p>Use an editor to find and replace the YouTube URLs according to the guide above.</p>
+<h4 id="step-3-test-changes">Step 3: Test changes<a class="headerlink" href="#step-3-test-changes" title="Permanent link">&para;</a></h4>
+<pre><code class="language-bash"># Run development server
+stencil start
+</code></pre>
+<h4 id="step-4-deploy">Step 4: Deploy<a class="headerlink" href="#step-4-deploy" title="Permanent link">&para;</a></h4>
+<pre><code class="language-bash"># Build theme
+stencil bundle
+
+# Upload theme to BigCommerce
+stencil push
+</code></pre>
+<h3 id="results-verification">Results Verification<a class="headerlink" href="#results-verification" title="Permanent link">&para;</a></h3>
+<p>After implementing the changes, YouTube videos will:</p>
+<ul>
+<li>✅ Not display video title</li>
+<li>✅ Not display suggested videos</li>
+<li>✅ Not display YouTube logo</li>
+<li>✅ Not display annotations</li>
+</ul>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<h4 id="issue-videos-still-show-title">Issue: Videos still show title<a class="headerlink" href="#issue-videos-still-show-title" title="Permanent link">&para;</a></h4>
+<p><strong>Solution:</strong> Check all YouTube URL locations again, ensure all required parameters are added.</p>
+<h4 id="issue-videos-wont-play">Issue: Videos won't play<a class="headerlink" href="#issue-videos-wont-play" title="Permanent link">&para;</a></h4>
+<p><strong>Solution:</strong> Check URL syntax, ensure there are no extra or missing characters.</p>
+<h4 id="issue-changes-dont-take-effect">Issue: Changes don't take effect<a class="headerlink" href="#issue-changes-dont-take-effect" title="Permanent link">&para;</a></h4>
+<p><strong>Solution:</strong>
+1. Clear browser cache
+2. Check if theme has been built and deployed
+3. Check browser console for JavaScript errors</p>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The <code>showinfo=0</code> parameter may not work with some newer YouTube videos due to policy changes</li>
+<li>Test with multiple different videos to ensure consistency</li>
+<li>Changes only apply to embedded videos, do not affect YouTube website</li>
+</ul>
               
             </div>
           </div><footer>
