@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.6.0 (07-18-2025)
+- [CORNERTSONE] PAYPAL-5000 Quick pay buttons are seen on PDP before 'required' option selection (#319)
+- [CORNERTSONE] Update to support multiple date fields and remove blank space (#320)
+- Optimize quick view functionality by implementing widget caching and improving performance with setTimeout
+- Add login with email link feature.
+
 ## 1.5.1 (03-14-2025)
 - Fix rrp price and sale price display on graphql products
 - Fix z-index Paypal button in PDP (#316)
