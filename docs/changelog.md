@@ -1,5 +1,13 @@
 # Release Notes
 
+## 1.7.0 (07-03-2026)
+- [CORNERSTONE] Add a section to display the payment promotion widget in the drop-down of the cart preview. ([#2523](https://github.com/bigcommerce/cornerstone/pull/2523))
+- [CORNERSTONE] Dispatch an event on productOptionsChanged (#2400)
+- [CORNERSTONE] Fix: swap content/data keys in onProductOptionsChanged event detail (#2640)
+- feat(page-transition): port page transition from bc-eshopping-dev (#360)
+- [CORNERSTONE] feat(payment): PI-2764 Add a section to display the payment promotion widget in the drop-down of the cart preview.
+- fix(pbcst): handle multi-root AJAX section response
+
 ## 1.6.1 (07-18-2025)
 - Add passwordless login translations for multiple languages
 
