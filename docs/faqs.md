@@ -28,6 +28,212 @@ document.head.appendChild(style);
 </script>
 ```
 
+## Cookie consent banner covers the CHECKOUT NOW button
+
+Q: With the BigCommerce Cookie Notification switched on, a shopper who has not answered the banner yet can add a product to the cart, but the **CHECKOUT NOW** button in the slide-out cart is hidden behind the banner. Scrolling the cart does not reveal it.
+
+A:
+
+The checkout button sits in a footer pinned to the bottom of the screen, outside the cart's scrolling area, which is where BigCommerce also pins the cookie banner. Scrolling can never reveal the button. The same applies to the sticky Add to Cart bar on product pages, and to desktop as well as mobile.
+
+**This is fixed in the theme itself from the next release.** Use the script below only if you are on an older version and need the fix today. It detects the theme fix and stands itself down automatically, so it is safe to leave in place during an upgrade — though you should delete it once you have upgraded.
+
+Go to **Storefront** > **Script Manager**, click **Create a Script**, choose:
+
+- **Location on page** = `Footer`
+- **Select pages where script will be added** = `All Pages`
+- **Script category** = `Essential`
+- **Script type** = `Script`
+
+**The Script category must be `Essential`.** Scripts filed under Analytics, Functional or Targeting Advertising are withheld by the consent manager until the shopper agrees to cookies. This fix only matters *before* they answer the banner, so any other category means it never runs when it is needed. The script sets no cookies and collects nothing, so Essential is the correct classification.
+
+Enter the script below to **Scripts contents**:
+
+```html
+<style>
+  /* Mount signal. BigCommerce injects #consent-manager long after this script
+     runs, so this animation makes the browser fire `animationstart` the moment
+     the element enters the document. outline-style defaults to none, so nothing
+     is ever painted. */
+  @keyframes bcConsentBannerMounted {
+    from { outline-color: rgba(0, 0, 0, 0); }
+    to { outline-color: rgba(0, 0, 0, 0.01); }
+  }
+
+  #consent-manager {
+    animation: bcConsentBannerMounted 0.01s;
+  }
+
+  /* The drawer's checkout footer is pinned to the viewport bottom and sits
+     outside the scroll area, so it must end above the banner. */
+  #cart-preview-dropdown {
+    bottom: var(--bc-consent-height, 0) !important;
+    transition: right 0.2s ease, bottom 0.2s ease, 0.2s visibility 0.1s;
+  }
+
+  #cart-preview-dropdown.is-open {
+    transition: right 0.2s ease, bottom 0.2s ease;
+  }
+
+  /* Sticky add-to-cart bar on product pages, mobile only. */
+  @media (max-width: 800px) {
+    .productView-qtyAddWrapper._sticky {
+      bottom: var(--bc-consent-height, 0) !important;
+    }
+  }
+
+  /* Floating widgets such as Smile.io Rewards or a chat launcher. Harmless if
+     you do not have them installed. */
+  body .smile-launcher-frame-container,
+  body .smile-launcher-frame-container.smile-launcher-border-radius-circular,
+  body #fc_frame {
+    /* --bc-bottom-chrome covers the banner AND the sticky add-to-cart bar,
+       which stack on each other on product pages. Clearing only the banner
+       would drop the widget straight onto the Add to Cart button. */
+    bottom: calc(var(--bc-bottom-chrome, 0px) + 16px) !important;
+  }
+
+  /* Keep the floating widgets off the cart drawer entirely. */
+  body.has-previewCartOpened .smile-launcher-frame-container,
+  body.has-previewCartOpened .smile-launcher-frame-container.smile-launcher-border-radius-circular,
+  body.has-previewCartOpened #fc_frame {
+    display: none !important;
+  }
+</style>
+
+<script>
+(function () {
+    'use strict';
+
+    if (window.__bcConsentBannerOffset) return;
+    window.__bcConsentBannerOffset = true;
+
+    var CUSTOM_PROPERTY = '--bc-consent-height';
+    var CHROME_PROPERTY = '--bc-bottom-chrome';
+    var BANNER_SELECTOR = '#consent-manager';
+    var STICKY_SELECTOR = '.productView-qtyAddWrapper._sticky';
+    var MOUNT_ANIMATION = 'bcConsentBannerMounted';
+    var CONSENT_ANSWERED_EVENT = 'consent_permissions_changed';
+    var MAX_VIEWPORT_SHARE = 0.6;
+    var BOTTOM_ANCHOR_TOLERANCE = 24;
+
+    var root = document.documentElement;
+    var resizeObserver = null;
+    var observed = null;
+    var pending = false;
+    var published = null;
+    var publishedChrome = null;
+
+    function measureOverlap(el, allowance) {
+        if (!el) return 0;
+
+        var style = window.getComputedStyle(el);
+
+        if (style.display === 'none' || style.visibility === 'hidden') return 0;
+        if (style.position !== 'fixed' && style.position !== 'sticky') return 0;
+
+        var rect = el.getBoundingClientRect();
+
+        if (rect.height === 0) return 0;
+
+        var slack = (allowance || 0) + BOTTOM_ANCHOR_TOLERANCE;
+
+        if (rect.bottom < window.innerHeight - slack) return 0;
+
+        var overlap = window.innerHeight - rect.top;
+
+        return Math.max(0, Math.min(overlap, window.innerHeight * MAX_VIEWPORT_SHARE));
+    }
+
+    function publish() {
+        var value = Math.round(measureOverlap(document.querySelector(BANNER_SELECTOR)));
+
+        if (value !== published) {
+            published = value;
+            root.style.setProperty(CUSTOM_PROPERTY, value + 'px');
+        }
+
+        var chrome = Math.max(value, Math.round(measureOverlap(document.querySelector(STICKY_SELECTOR), value)));
+
+        if (chrome !== publishedChrome) {
+            publishedChrome = chrome;
+            root.style.setProperty(CHROME_PROPERTY, chrome + 'px');
+        }
+    }
+
+    function schedule() {
+        if (pending) return;
+        pending = true;
+
+        var run = function () {
+            pending = false;
+            publish();
+        };
+
+        if (window.requestAnimationFrame) {
+            window.requestAnimationFrame(run);
+        } else {
+            window.setTimeout(run, 16);
+        }
+    }
+
+    function track() {
+        var el = document.querySelector(BANNER_SELECTOR);
+
+        if (el !== observed) {
+            if (resizeObserver) resizeObserver.disconnect();
+
+            observed = el;
+
+            if (el && window.ResizeObserver) {
+                resizeObserver = new window.ResizeObserver(schedule);
+                resizeObserver.observe(el);
+            }
+        }
+
+        schedule();
+    }
+
+    function start() {
+        /* Stand down if the theme already ships the permanent fix. */
+        if (window.__bcConsentOffset) return;
+
+        document.addEventListener('animationstart', function (event) {
+            if (event.animationName === MOUNT_ANIMATION) track();
+        }, true);
+
+        /* The banner is removed a beat after the shopper answers it. */
+        document.addEventListener(CONSENT_ANSWERED_EVENT, function () {
+            track();
+            window.setTimeout(track, 300);
+        });
+
+        window.addEventListener('resize', schedule);
+        window.addEventListener('orientationchange', schedule);
+        window.addEventListener('scroll', schedule, { passive: true });
+        window.addEventListener('load', track);
+
+        track();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () { window.setTimeout(start, 0); });
+    } else {
+        window.setTimeout(start, 0);
+    }
+}());
+</script>
+```
+
+### How to check it worked
+
+1. Open a product page on your phone in a private window, so the cookie banner appears.
+2. Add the product to the cart without answering the banner.
+3. The **CHECKOUT NOW** button should be fully visible, sitting directly above the banner.
+4. Tap **Accept All Cookies** or **Reject all**. The banner disappears and the cart expands to the full screen height with no leftover gap.
+
+Test the same path on desktop, and try **Settings** as well — the cookie preferences dialog must still open on top of the cart, not behind it.
+
 ## Display mega menu with 4 columns
 
 Go to **Storefront** > **Script Manager**, click **Create a Script**, choose:
