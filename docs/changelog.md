@@ -1,5 +1,11 @@
 # Release Notes
 
+## 1.8.0 (08-24-2026)
+- fix(checkout): rename the mislabelled "Yeseva One" font options to Montserrat and style the store-name heading (#380)
+- fix(consent): keep the cart drawer checkout button and the sticky add-to-cart bar clear of the BigCommerce cookie banner (#378)
+- feat(promotions): featured promotions callout on product cards, list items, PDP and quick view, per Cornerstone 6.21.0 (#376)
+- feat(backorders): backorder & stock messaging on PDP, cart, cart drawer and account order details, styled as an availability card, plus a shipping-countdown stock guard (#375)
+
 ## 1.7.0 (07-03-2026)
 - [CORNERSTONE] Add a section to display the payment promotion widget in the drop-down of the cart preview. ([#2523](https://github.com/bigcommerce/cornerstone/pull/2523))
 - [CORNERSTONE] Dispatch an event on productOptionsChanged (#2400)
