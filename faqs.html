@@ -186,59 +186,65 @@ document.head.appendChild(style);
 <li><strong>Script type</strong> = <code>Script</code></li>
 </ul>
 <p><strong>The Script category must be <code>Essential</code>.</strong> Scripts filed under Analytics, Functional or Targeting Advertising are withheld by the consent manager until the shopper agrees to cookies. This fix only matters <em>before</em> they answer the banner, so any other category means it never runs when it is needed. The script sets no cookies and collects nothing, so Essential is the correct classification.</p>
+<p>Script Manager only accepts script code, so the script adds the styles itself.</p>
 <p>Enter the script below to <strong>Scripts contents</strong>:</p>
-<pre><code class="language-html">&lt;style&gt;
-  /* Mount signal. BigCommerce injects #consent-manager long after this script
-     runs, so this animation makes the browser fire `animationstart` the moment
-     the element enters the document. outline-style defaults to none, so nothing
-     is ever painted. */
-  @keyframes bcConsentBannerMounted {
-    from { outline-color: rgba(0, 0, 0, 0); }
-    to { outline-color: rgba(0, 0, 0, 0.01); }
-  }
+<pre><code class="language-html">&lt;script&gt;
+(function () {
+  var css = [
+    &quot;  /* Mount signal. BigCommerce injects #consent-manager long after this script&quot;,
+    &quot;     runs, so this animation makes the browser fire `animationstart` the moment&quot;,
+    &quot;     the element enters the document. outline-style defaults to none, so nothing&quot;,
+    &quot;     is ever painted. */&quot;,
+    &quot;  @keyframes bcConsentBannerMounted {&quot;,
+    &quot;    from { outline-color: rgba(0, 0, 0, 0); }&quot;,
+    &quot;    to { outline-color: rgba(0, 0, 0, 0.01); }&quot;,
+    &quot;  }&quot;,
+    &quot;&quot;,
+    &quot;  #consent-manager {&quot;,
+    &quot;    animation: bcConsentBannerMounted 0.01s;&quot;,
+    &quot;  }&quot;,
+    &quot;&quot;,
+    &quot;  /* The drawer's checkout footer is pinned to the viewport bottom and sits&quot;,
+    &quot;     outside the scroll area, so it must end above the banner. */&quot;,
+    &quot;  #cart-preview-dropdown {&quot;,
+    &quot;    bottom: var(--bc-consent-height, 0) !important;&quot;,
+    &quot;    transition: right 0.2s ease, bottom 0.2s ease, 0.2s visibility 0.1s;&quot;,
+    &quot;  }&quot;,
+    &quot;&quot;,
+    &quot;  #cart-preview-dropdown.is-open {&quot;,
+    &quot;    transition: right 0.2s ease, bottom 0.2s ease;&quot;,
+    &quot;  }&quot;,
+    &quot;&quot;,
+    &quot;  /* Sticky add-to-cart bar on product pages, mobile only. */&quot;,
+    &quot;  @media (max-width: 800px) {&quot;,
+    &quot;    .productView-qtyAddWrapper._sticky {&quot;,
+    &quot;      bottom: var(--bc-consent-height, 0) !important;&quot;,
+    &quot;    }&quot;,
+    &quot;  }&quot;,
+    &quot;&quot;,
+    &quot;  /* Floating widgets such as Smile.io Rewards or a chat launcher. Harmless if&quot;,
+    &quot;     you do not have them installed. */&quot;,
+    &quot;  body .smile-launcher-frame-container,&quot;,
+    &quot;  body .smile-launcher-frame-container.smile-launcher-border-radius-circular,&quot;,
+    &quot;  body #fc_frame {&quot;,
+    &quot;    /* --bc-bottom-chrome covers the banner AND the sticky add-to-cart bar,&quot;,
+    &quot;       which stack on each other on product pages. Clearing only the banner&quot;,
+    &quot;       would drop the widget straight onto the Add to Cart button. */&quot;,
+    &quot;    bottom: calc(var(--bc-bottom-chrome, 0px) + 16px) !important;&quot;,
+    &quot;  }&quot;,
+    &quot;&quot;,
+    &quot;  /* Keep the floating widgets off the cart drawer entirely. */&quot;,
+    &quot;  body.has-previewCartOpened .smile-launcher-frame-container,&quot;,
+    &quot;  body.has-previewCartOpened .smile-launcher-frame-container.smile-launcher-border-radius-circular,&quot;,
+    &quot;  body.has-previewCartOpened #fc_frame {&quot;,
+    &quot;    display: none !important;&quot;,
+    &quot;  }&quot;
+  ].join('\n');
+  var s = document.createElement('style');
+  s.textContent = css;
+  document.head.appendChild(s);
+}());
 
-  #consent-manager {
-    animation: bcConsentBannerMounted 0.01s;
-  }
-
-  /* The drawer's checkout footer is pinned to the viewport bottom and sits
-     outside the scroll area, so it must end above the banner. */
-  #cart-preview-dropdown {
-    bottom: var(--bc-consent-height, 0) !important;
-    transition: right 0.2s ease, bottom 0.2s ease, 0.2s visibility 0.1s;
-  }
-
-  #cart-preview-dropdown.is-open {
-    transition: right 0.2s ease, bottom 0.2s ease;
-  }
-
-  /* Sticky add-to-cart bar on product pages, mobile only. */
-  @media (max-width: 800px) {
-    .productView-qtyAddWrapper._sticky {
-      bottom: var(--bc-consent-height, 0) !important;
-    }
-  }
-
-  /* Floating widgets such as Smile.io Rewards or a chat launcher. Harmless if
-     you do not have them installed. */
-  body .smile-launcher-frame-container,
-  body .smile-launcher-frame-container.smile-launcher-border-radius-circular,
-  body #fc_frame {
-    /* --bc-bottom-chrome covers the banner AND the sticky add-to-cart bar,
-       which stack on each other on product pages. Clearing only the banner
-       would drop the widget straight onto the Add to Cart button. */
-    bottom: calc(var(--bc-bottom-chrome, 0px) + 16px) !important;
-  }
-
-  /* Keep the floating widgets off the cart drawer entirely. */
-  body.has-previewCartOpened .smile-launcher-frame-container,
-  body.has-previewCartOpened .smile-launcher-frame-container.smile-launcher-border-radius-circular,
-  body.has-previewCartOpened #fc_frame {
-    display: none !important;
-  }
-&lt;/style&gt;
-
-&lt;script&gt;
 (function () {
     'use strict';
 
