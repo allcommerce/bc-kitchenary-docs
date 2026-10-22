@@ -47,61 +47,68 @@ Go to **Storefront** > **Script Manager**, click **Create a Script**, choose:
 
 **The Script category must be `Essential`.** Scripts filed under Analytics, Functional or Targeting Advertising are withheld by the consent manager until the shopper agrees to cookies. This fix only matters *before* they answer the banner, so any other category means it never runs when it is needed. The script sets no cookies and collects nothing, so Essential is the correct classification.
 
+Script Manager only accepts script code, so the script adds the styles itself.
+
 Enter the script below to **Scripts contents**:
 
 ```html
-<style>
-  /* Mount signal. BigCommerce injects #consent-manager long after this script
-     runs, so this animation makes the browser fire `animationstart` the moment
-     the element enters the document. outline-style defaults to none, so nothing
-     is ever painted. */
-  @keyframes bcConsentBannerMounted {
-    from { outline-color: rgba(0, 0, 0, 0); }
-    to { outline-color: rgba(0, 0, 0, 0.01); }
-  }
-
-  #consent-manager {
-    animation: bcConsentBannerMounted 0.01s;
-  }
-
-  /* The drawer's checkout footer is pinned to the viewport bottom and sits
-     outside the scroll area, so it must end above the banner. */
-  #cart-preview-dropdown {
-    bottom: var(--bc-consent-height, 0) !important;
-    transition: right 0.2s ease, bottom 0.2s ease, 0.2s visibility 0.1s;
-  }
-
-  #cart-preview-dropdown.is-open {
-    transition: right 0.2s ease, bottom 0.2s ease;
-  }
-
-  /* Sticky add-to-cart bar on product pages, mobile only. */
-  @media (max-width: 800px) {
-    .productView-qtyAddWrapper._sticky {
-      bottom: var(--bc-consent-height, 0) !important;
-    }
-  }
-
-  /* Floating widgets such as Smile.io Rewards or a chat launcher. Harmless if
-     you do not have them installed. */
-  body .smile-launcher-frame-container,
-  body .smile-launcher-frame-container.smile-launcher-border-radius-circular,
-  body #fc_frame {
-    /* --bc-bottom-chrome covers the banner AND the sticky add-to-cart bar,
-       which stack on each other on product pages. Clearing only the banner
-       would drop the widget straight onto the Add to Cart button. */
-    bottom: calc(var(--bc-bottom-chrome, 0px) + 16px) !important;
-  }
-
-  /* Keep the floating widgets off the cart drawer entirely. */
-  body.has-previewCartOpened .smile-launcher-frame-container,
-  body.has-previewCartOpened .smile-launcher-frame-container.smile-launcher-border-radius-circular,
-  body.has-previewCartOpened #fc_frame {
-    display: none !important;
-  }
-</style>
-
 <script>
+(function () {
+  var css = [
+    "  /* Mount signal. BigCommerce injects #consent-manager long after this script",
+    "     runs, so this animation makes the browser fire `animationstart` the moment",
+    "     the element enters the document. outline-style defaults to none, so nothing",
+    "     is ever painted. */",
+    "  @keyframes bcConsentBannerMounted {",
+    "    from { outline-color: rgba(0, 0, 0, 0); }",
+    "    to { outline-color: rgba(0, 0, 0, 0.01); }",
+    "  }",
+    "",
+    "  #consent-manager {",
+    "    animation: bcConsentBannerMounted 0.01s;",
+    "  }",
+    "",
+    "  /* The drawer's checkout footer is pinned to the viewport bottom and sits",
+    "     outside the scroll area, so it must end above the banner. */",
+    "  #cart-preview-dropdown {",
+    "    bottom: var(--bc-consent-height, 0) !important;",
+    "    transition: right 0.2s ease, bottom 0.2s ease, 0.2s visibility 0.1s;",
+    "  }",
+    "",
+    "  #cart-preview-dropdown.is-open {",
+    "    transition: right 0.2s ease, bottom 0.2s ease;",
+    "  }",
+    "",
+    "  /* Sticky add-to-cart bar on product pages, mobile only. */",
+    "  @media (max-width: 800px) {",
+    "    .productView-qtyAddWrapper._sticky {",
+    "      bottom: var(--bc-consent-height, 0) !important;",
+    "    }",
+    "  }",
+    "",
+    "  /* Floating widgets such as Smile.io Rewards or a chat launcher. Harmless if",
+    "     you do not have them installed. */",
+    "  body .smile-launcher-frame-container,",
+    "  body .smile-launcher-frame-container.smile-launcher-border-radius-circular,",
+    "  body #fc_frame {",
+    "    /* --bc-bottom-chrome covers the banner AND the sticky add-to-cart bar,",
+    "       which stack on each other on product pages. Clearing only the banner",
+    "       would drop the widget straight onto the Add to Cart button. */",
+    "    bottom: calc(var(--bc-bottom-chrome, 0px) + 16px) !important;",
+    "  }",
+    "",
+    "  /* Keep the floating widgets off the cart drawer entirely. */",
+    "  body.has-previewCartOpened .smile-launcher-frame-container,",
+    "  body.has-previewCartOpened .smile-launcher-frame-container.smile-launcher-border-radius-circular,",
+    "  body.has-previewCartOpened #fc_frame {",
+    "    display: none !important;",
+    "  }"
+  ].join('\n');
+  var s = document.createElement('style');
+  s.textContent = css;
+  document.head.appendChild(s);
+}());
+
 (function () {
     'use strict';
 
