@@ -1,5 +1,10 @@
 # Release Notes
 
+## 1.8.1 (10-30-2026)
+- fix(products): strip tag fragments from product summaries so Add to Cart no longer lands above the title on cards, list items and compare (#393)
+- fix(reviews): paging through product reviews reopens the reviews tab instead of jumping back to Description, on desktop tabs and mobile accordions (#394)
+- fix(security): quote the hidden sort input and other attribute values in the price range facet and Also Bought preview, so a crafted `?sort=` value can no longer inject attributes (PCI scan XSS finding) (#395)
+
 ## 1.8.0 (08-24-2026)
 - fix(checkout): rename the mislabelled "Yeseva One" font options to Montserrat and style the store-name heading (#380)
 - fix(consent): keep the cart drawer checkout button and the sticky add-to-cart bar clear of the BigCommerce cookie banner (#378)
