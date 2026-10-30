@@ -73,6 +73,8 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Release Notes</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#181-10-30-2026">1.8.1 (10-30-2026)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#180-08-24-2026">1.8.0 (08-24-2026)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#170-07-03-2026">1.7.0 (07-03-2026)</a>
@@ -146,6 +148,12 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h1>
+<h2 id="181-10-30-2026">1.8.1 (10-30-2026)<a class="headerlink" href="#181-10-30-2026" title="Permanent link">&para;</a></h2>
+<ul>
+<li>fix(products): strip tag fragments from product summaries so Add to Cart no longer lands above the title on cards, list items and compare (#393)</li>
+<li>fix(reviews): paging through product reviews reopens the reviews tab instead of jumping back to Description, on desktop tabs and mobile accordions (#394)</li>
+<li>fix(security): quote the hidden sort input and other attribute values in the price range facet and Also Bought preview, so a crafted <code>?sort=</code> value can no longer inject attributes (PCI scan XSS finding) (#395)</li>
+</ul>
 <h2 id="180-08-24-2026">1.8.0 (08-24-2026)<a class="headerlink" href="#180-08-24-2026" title="Permanent link">&para;</a></h2>
 <ul>
 <li>fix(checkout): rename the mislabelled "Yeseva One" font options to Montserrat and style the store-name heading (#380)</li>
